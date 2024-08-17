@@ -6,27 +6,26 @@
 
 ---
 
-# Cards and Notes
+# カードとノート
 
-- [Can I link cards together?](./linking-cards-together.md)
-- [Can I reveal parts of a card one at a time?](./can-i-reveal-parts-of-a-card-one-at-a-time.md)
-- [Card template has a problem](./card-template-has-a-problem.md)
-- [Cards are reversed / appearing twice](./cards-are-reversed-appearing-twice.md)
-- [Characters are cut off](./characters-are-cut-off.md)
-- [Customizing MathJax](./customizing-mathjax.md)
-- [Errors when recording](./errors-when-recording.md)
-- [Extra characters appearing on cards](./extra-characters-appearing-on-cards.md)
-- [Multiple choice questions](./multiple-choice-questions.md)
-- [No cloze found on card](./no-cloze-found-on-card.md)
-- [Note types with strange names](./note-types-with-strange-names.md)
-- [Printing cards in your collection](./printing-cards-in-your-collection.md)
-- [Removing duplicate note types](./removing-duplicate-note-types.md)
-- [Some updates were ignored because note type has changed](./some-updates-were-ignored-because-the-note-type-has-changed.md)
-- [Sound/image media files have gone missing!](./sounds-or-images-have-gone-missing.md)
-- [Splitting a field into multiple fields](./splitting-a-field-into-multiple-fields.md)
-- [Text to speech support](./text-to-speech-support.md)
-- [When adding a new card, some fields do not reset!](./sticky-fields.md)
-
+- [カードをリンクすることはできますか？](./linking-cards-together.md)
+- [カードの一部を一度に表示することはできますか？](./can-i-reveal-parts-of-a-card-one-at-a-time.md)
+- [カードテンプレートに問題があります](./card-template-has-a-problem.md)
+- [カードが逆になっている/二重に表示される](./cards-are-reversed-appearing-twice.md)
+- [文字が切れています](./characters-are-cut-off.md)
+- [MathJaxのカスタマイズ](./customizing-mathjax.md)
+- [録音時にエラーが発生する](./errors-when-recording.md)
+- [カードに余分な文字が表示される](./extra-characters-appearing-on-cards.md)
+- [複数選択問題](./multiple-choice-questions.md)
+- [カードにクローズが見つかりません](./no-cloze-found-on-card.md)
+- [奇妙な名前のノートタイプ](./note-types-with-strange-names.md)
+- [コレクション内のカードを印刷する](./printing-cards-in-your-collection.md)
+- [重複したノートタイプを削除する](./removing-duplicate-note-types.md)
+- [ノートタイプが変更されたため、一部の更新が無視されました](./some-updates-were-ignored-because-the-note-type-has-changed.md)
+- [音声/画像メディアファイルが見つかりません！](./sounds-or-images-have-gone-missing.md)
+- [フィールドを複数のフィールドに分割する](./splitting-a-field-into-multiple-fields.md)
+- [テキスト読み上げサポート](./text-to-speech-support.md)
+- [新しいカードを追加する際に、一部のフィールドがリセットされません！](./sticky-fields.md)
 ---
 
 # デッキ
