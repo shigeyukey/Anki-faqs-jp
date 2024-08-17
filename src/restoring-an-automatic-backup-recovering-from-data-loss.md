@@ -1,14 +1,14 @@
-# Restoring an Automatic Backup (Recovering from Data Loss)
+# 自動バックアップの復元（データ損失からの回復）
 
-Sometimes your collection may become very damaged. For instance:
+コレクションが非常に損傷を受けることがあります。例えば：
 
-- You accidentally deleted a card type or hundreds of cards and didn't notice in time to undo it.
-- Your collection has become corrupted.
-- There was a syncing error and you accidentally overwrote a large number of reviews that you did on another device.
-- ...or anything else that leaves you with lost data.
+- カードタイプや数百枚のカードを誤って削除し、元に戻すのに気づかなかった場合。
+- コレクションが破損した場合。
+- 同期エラーが発生し、別のデバイスで行った大量のレビューを誤って上書きしてしまった場合。
+- その他、データを失う原因となる何かが発生した場合。
 
-Anki automatically backs up your collection every time you close Anki or sync (AnkiMobile backs up after fixed time intervals and before syncs), and by default it stores 30 backups. For information on restoring an automatic backup, please visit the relevant page:
+Ankiは、Ankiを閉じるたび、または同期するたびに自動的にコレクションをバックアップします（AnkiMobileは一定の時間間隔ごとおよび同期前にバックアップします）。デフォルトでは30個のバックアップを保存します。自動バックアップの復元に関する情報については、以下の関連ページをご覧ください：
 
-- Restore a [backup made by Anki on your computer](https://docs.ankiweb.net/backups.html)
-- Restore a [backup made by AnkiMobile](https://docs.ankimobile.net/preferences.html#backups)
-- Restore a [backup made by AnkiDroid](https://ankidroid.org/docs/manual.html#backups)
+- [コンピュータでAnkiが作成したバックアップを復元する](https://shigeyukey.github.io/anki-manual-jp/backups.html)
+- [AnkiMobileが作成したバックアップを復元する](https://docs.ankimobile.net/preferences.html#backups)
+- [AnkiDroidが作成したバックアップを復元する](https://ankidroid.org/docs/manual.html#backups)

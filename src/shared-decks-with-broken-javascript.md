@@ -1,16 +1,15 @@
-# Shared decks with broken Javascript
+# JavaScriptが壊れている共有デッキ
 
-Some shared decks make use of a feature called 'Javascript', which allows them to dynamically modify the display of the card. Javascript can be fragile, which is why the Anki manual recommends deck authors avoid it. It may break when Anki is updated, or when the deck author has not tested their Javascript on the different Anki platforms.
+一部の共有デッキは「JavaScript」という機能を使用しており、これによりカードの表示を動的に変更することができます。JavaScriptは壊れやすいため、Ankiのマニュアルではデッキ作成者に使用を避けるよう推奨しています。Ankiが更新されたときや、デッキ作成者が異なるAnkiプラットフォームでJavaScriptをテストしていない場合に壊れることがあります。
 
-If you encounter a Javascript error in a shared deck, please post a review on the shared deck download page to let the deck author and other users know of the problem. If the deck author is active, they will hopefully address 
-the issue in a future update.
+共有デッキでJavaScriptエラーが発生した場合は、デッキ作成者や他のユーザーに問題を知らせるために、共有デッキのダウンロードページにレビューを投稿してください。デッキ作成者がアクティブであれば、将来のアップデートで問題に対処してくれることを期待できます。
 
-If the deck author is unable to help you, you can try edit your card template to remove the Javascript to prevent an error from showing. Depending on what the Javascript was doing, this may result in lost functionality.
+デッキ作成者が問題を解決できない場合、エラーが表示されないようにカードテンプレートを編集してJavaScriptを削除することができます。JavaScriptが行っていたことによっては、機能が失われる可能性があります。
 
-To do so, using the computer version of Anki:
+これを行うには、Ankiのコンピュータ版を使用します：
 
-- Use File>Export to export your entire collection with scheduling information. This will give you a backup that you can restore to if anything goes wrong.
-- Edit a card, and click the Cards... button.
-- Look for areas in the front and back template that start with  ```<script>``` and end with ```</script>```. Remove the start and end, and everything in between.
-- Confirm that the card displays in the review screen without error. If it's working ok, you can sync your changes to AnkiWeb and then to your other devices.
-- If removing the script has completely broken the card, use File>Import to restore to the backup you created.
+- ファイル>エクスポートを使用して、スケジューリング情報を含むコレクション全体をエクスポートします。これにより、問題が発生した場合に復元できるバックアップが作成されます。
+- カードを編集し、カード... ボタンをクリックします。
+- 表面と裏面のテンプレートで ```<script>``` で始まり ```</script>``` で終わる部分を探します。開始タグと終了タグ、およびその間のすべてを削除します。
+- カードがエラーなしでレビュー画面に表示されることを確認します。問題がなければ、変更をAnkiWebに同期し、他のデバイスにも同期できます。
+- スクリプトを削除してカードが完全に壊れてしまった場合は、ファイル>インポートを使用して作成したバックアップを復元します。

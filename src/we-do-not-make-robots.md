@@ -1,3 +1,3 @@
-# We do not make robots
+# 私たちはロボットを作っていません
 
-We make a _flashcard program_ called Anki. If you are having problems with a robot you bought from a _company_ called Anki, please go to <https://support.digitaldreamlabs.com/>
+私たちはAnkiという_フラッシュカードプログラム_を作っています。_Anki_という会社から購入したロボットに問題がある場合は、<https://support.digitaldreamlabs.com/>にアクセスしてください。

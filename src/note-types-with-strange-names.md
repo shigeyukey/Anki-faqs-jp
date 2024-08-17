@@ -1,12 +1,12 @@
-# Note types with strange names
+# 奇妙な名前のノートタイプ
 
-After you've used Anki for a while and downloaded some shared decks, you may end up with some note types with names like ```Basic-908e4``` or ```Cloze-37a28```. These note types are created when you download a shared deck that uses a note type with the same name as one that's already in your collection. (If Anki didn't do this, then it might merge two different note types that happened to have the same name.)
+Ankiをしばらく使用し、共有デッキをダウンロードすると、```Basic-908e4``` や ```Cloze-37a28``` のような名前のノートタイプがいくつかできることがあります。これらのノートタイプは、同じ名前のノートタイプを使用する共有デッキをダウンロードしたときに作成されます。（Ankiがこれを行わなかった場合、同じ名前の異なるノートタイプが統合されてしまう可能性があります。）
 
-Having these note types in your collection is normal and will not cause any problems, but if you would like to clean up, you can use the following procedure:
+これらのノートタイプがコレクションに存在することは正常であり、問題を引き起こすことはありませんが、整理したい場合は次の手順を使用できます：
 
-1. Compare the fields and card templates of each of the note types using the *Fields...* and *Cards...* buttons in the Manage Note Types dialog (Tools → Manage Note Types in the main window). If they're not the same, then you should just rename one to something more descriptive. If they are the same, then you can continue with these instructions to merge them.
-2. Open the browser and select the note type that you want to get rid of in the left pane. (You can pick either one as long as you're consistent.)
-3. Click in the right pane and choose Edit → Select All.
-4. Choose Notes → Change Note Type and change all of the cards to the note type that you're keeping. (Note that this step will require a full sync to AnkiWeb the next time you sync, so if you have unsynced progress on other devices, you should get everything in sync first. Anki will give you a warning about this.)
-5. Close the browser, return to the Manage Note Types dialog, and delete the old note type.
-6. Repeat these steps for any other pairs of note types you'd like to combine.
+1. 「ノートタイプの管理」ダイアログ（メインウィンドウのツール → ノートタイプの管理）で *フィールド...* ボタンと *カード...* ボタンを使用して、各ノートタイプのフィールドとカードテンプレートを比較します。それらが同じでない場合は、単に名前をより説明的なものに変更するだけでよいです。同じである場合は、これらの手順に従って統合を続けることができます。
+2. ブラウザを開き、左ペインで削除したいノートタイプを選択します。（どちらを選んでも構いませんが、一貫性を持たせるようにしてください。）
+3. 右ペインをクリックし、編集 → すべて選択 を選びます。
+4. ノート → ノートタイプの変更 を選び、すべてのカードを保持するノートタイプに変更します。（このステップは次回AnkiWebと同期する際に完全な同期を必要とするため、他のデバイスで未同期の進行状況がある場合は、まずすべてを同期させる必要があります。Ankiはこの点について警告を表示します。）
+5. ブラウザを閉じ、「ノートタイプの管理」ダイアログに戻り、古いノートタイプを削除します。
+6. 統合したい他のノートタイプのペアについても、これらの手順を繰り返します。

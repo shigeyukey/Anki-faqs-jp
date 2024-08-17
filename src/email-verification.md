@@ -1,7 +1,7 @@
-# Email verification
+# メールアドレスの確認
 
-AnkiWeb was previously lax about verifying your email address, sending a message out when you sign up for an account but not requiring that it be responded to. The problem with this is that email hosts don't like it when email is sent to invalid addresses, and we risk the messages we send about the service landing in the spam folder or being dropped completely if the email providers decide the valid/invalid ratio is not good enough.
+AnkiWebは以前、アカウント登録時に確認メールを送信していましたが、返信を必須としていませんでした。この問題点は、無効なアドレスにメールが送信されると、メールホストがそれを嫌がり、サービスに関するメッセージがスパムフォルダに入るか、完全に削除されるリスクがあることです。特に、メールプロバイダーが有効/無効の比率が十分でないと判断した場合です。
 
-So to address this, we've had to start verifying your email address is valid once a year. Once you click the link in the verify email message, it tells us your address is current and we are known to you, so we can send you service-related mails in the future (like when you reset your password) with a reasonable degree of certainty that the mails will not bounce back.
+この問題に対処するために、年に一度、メールアドレスが有効であることを確認する必要があります。確認メールのリンクをクリックすると、アドレスが現在有効であり、私たちからのメールを認識していることが確認されます。これにより、将来的にサービス関連のメール（パスワードリセット時など）を送信する際に、メールが返送されるリスクを合理的に低減できます。
 
-Please note our privacy policy has not changed - we will only use your email address for messages related to Anki.
+なお、プライバシーポリシーは変更されておらず、メールアドレスはAnkiに関連するメッセージのみに使用されます。

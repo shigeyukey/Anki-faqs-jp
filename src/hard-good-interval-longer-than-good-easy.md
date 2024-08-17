@@ -1,10 +1,10 @@
-# Hard/good interval is longer than good/easy
+# 「難しい/良い」の間隔が「良い/簡単」よりも長い
 
-When a card is in learning:
+カードが学習中の場合：
 
-- Again will be the first learning step
-- Hard will repeat the current learning step (except on the first step, where it is the average of first and second steps)
-- Good will the the next learning step, or the Graduating interval if learning steps are exhausted
-- Easy will be the Easy Interval
+- 「再学習」は最初の学習ステップになります
+- 「難しい」は現在の学習ステップを繰り返します（ただし、最初のステップでは、最初と2番目のステップの平均になります）
+- 「良い」は次の学習ステップ、または学習ステップが終了した場合は卒業間隔になります
+- 「簡単」は簡単間隔になります
 
-If the [learning steps](https://docs.ankiweb.net/deck-options.html#learning-steps) are set to be longer than the [graduating or easy interval](https://docs.ankiweb.net/deck-options.html#graduating-interval), Hard/Good might show longer intervals than Good/Easy.
+[学習ステップ](https://shigeyukey.github.io/anki-manual-jp/deck-options.html#学習ステップ)が[卒業間隔または簡単間隔](https://shigeyukey.github.io/anki-manual-jp/deck-options.html#卒業間隔)よりも長く設定されている場合、「難しい/良い」が「良い/簡単」よりも長い間隔を示すことがあります。

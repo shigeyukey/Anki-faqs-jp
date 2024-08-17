@@ -1,15 +1,15 @@
-# How do I move cards between decks?
+# カードをデッキ間で移動するにはどうすればよいですか？
 
-You may want to move cards between decks for a variety of reasons, for example:
+さまざまな理由でカードをデッキ間で移動したい場合があります。例えば：
 
-* you accidentally put them in the wrong deck
-* you made a single large deck and want to break it into several smaller ones
-* you made several small decks and want to combine them into a larger one
+* 間違って別のデッキに入れてしまった
+* 大きなデッキを作成し、それをいくつかの小さなデッキに分割したい
+* いくつかの小さなデッキを作成し、それらを大きなデッキにまとめたい
 
-The [browser](https://docs.ankiweb.net/browsing.html) offers a **Change Deck** option in the menu bar for these kinds of tasks.
+このような作業には、[ブラウザ](https://shigeyukey.github.io/anki-manual-jp/browsing.html)のメニューバーにある **デッキの変更** オプションを使用できます。
 
-See also [Merging/combining two decks](https://faqs.ankiweb.net/merging-or-combining-two-decks.html#mergingcombining-two-decks) for more precise instructions for that exact situation.
+この状況に対する具体的な手順については、[2つのデッキを統合/結合する](https://shigeyukey.github.io/Anki-faqs-jp/merging-or-combining-two-decks.html#mergingcombining-two-decks) も参照してください。
 
 ---
 
-If you want to move cards between *profiles*, or share cards with other people, you can use Anki's [export](https://docs.ankiweb.net/exporting.html) function to export a packaged deck. If you want to share or move to a new profile only some of the cards in a deck, you can first use the change deck option above to move them into a temporary deck, then export that deck.
+*プロファイル*間でカードを移動したり、他の人とカードを共有したりする場合は、Ankiの[エクスポート](https://shigeyukey.github.io/anki-manual-jp/exporting.html)機能を使用してパッケージ化されたデッキをエクスポートできます。デッキ内の一部のカードのみを新しいプロファイルに共有または移動したい場合は、まず上記のデッキ変更オプションを使用して一時的なデッキに移動し、そのデッキをエクスポートします。

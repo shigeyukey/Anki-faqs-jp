@@ -1,9 +1,9 @@
-# Can I reveal parts of a card one at a time?
+# カードの一部を一度に表示することはできますか？
 
-Typical flashcards, both on paper and in Anki, have a front and a back: the prompt or question is shown on the front and the answer on the back. Sometimes people want to add more steps to the answer. For instance, you might want to show the word in a foreign language on the front, then show a definition when you press the button once, then show an example sentence when you press it again, and so on.
+紙のフラッシュカードでもAnkiでも、通常のフラッシュカードには表と裏があります：表にはプロンプトや質問が表示され、裏には答えが表示されます。時々、答えにもっとステップを追加したいと思うことがあります。例えば、表に外国語の単語を表示し、ボタンを一度押すと定義を表示し、もう一度押すと例文を表示する、といった具合です。
 
-This is generally not a good idea. The more complicated you make your cards, the more difficult they become to remember ([rule 4](http://www.supermemo.com/articles/20rules.htm)) and the less efficiently they can be scheduled. The difference between the amount of time it takes to learn and review a few complex cards and the amount of time it takes to learn a larger number of much simpler cards containing the same information can be stunning.
+これは一般的には良い考えではありません。カードを複雑にすればするほど、覚えるのが難しくなり（[ルール4](http://www.supermemo.com/articles/20rules.htm)）、効率的にスケジュールすることが難しくなります。いくつかの複雑なカードを学習・復習するのにかかる時間と、同じ情報を含むより多くのシンプルなカードを学習するのにかかる時間の差は驚くべきものです。
 
-For this reason, Anki doesn't support having more than two sides per card. In our foreign-language words example, you might instead want to create multiple [card types](https://docs.ankiweb.net/templates/intro.html), so that you would be asked for each of the items *on separate cards* – one card could show you the word and ask for a definition, another could show the example sentence with the word missing and ask what word logically fits, and so on.
+このため、Ankiではカードに2つ以上の面を持たせることはサポートされていません。外国語の単語の例では、代わりに複数の[カードタイプ](https://shigeyukey.github.io/anki-manual-jp/templates/intro.html)を作成し、それぞれの項目を*別々のカード*で尋ねるようにすることができます。例えば、一つのカードでは単語を表示して定義を尋ね、別のカードでは例文から単語を抜いてその単語を尋ねる、といった具合です。
 
-In some cases, you might want to include extra non-essential information on a card without showing it until you need it. For this situation, Anki offers [hint fields](https://docs.ankiweb.net/templates/fields.html#hint-fields).
+場合によっては、カードに追加の非必須情報を含め、それが必要になるまで表示しないようにしたいことがあります。このような場合、Ankiは[ヒントフィールド](https://shigeyukey.github.io/anki-manual-jp/templates/fields.html#ヒントフィールド)を提供しています。

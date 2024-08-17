@@ -1,11 +1,11 @@
-# Cards are reversed / appearing twice
+# カードが逆向きに表示される / 二重に表示される
 
-Anki can be configured to show cards in both a forward and reverse direction. If you want cards to only show from front->back, you can delete the reverse card.
+Ankiはカードを順方向と逆方向の両方で表示するように設定できます。カードを前から後ろにのみ表示したい場合は、逆向きのカードを削除できます。
 
-If you have added cards to the `Basic (and reversed)` or `Basic (optional reversed)` notetypes, you can change the cards to the "Basic" card type by selecting them in the Browse screen, then using the Change Note Type menu item. Select your Basic note type, choosing to keep Card 1, and discard Card 2.
+`Basic (and reversed)` または `Basic (optional reversed)` のノートタイプにカードを追加した場合、ブラウズ画面でそれらを選択し、ノートタイプの変更メニュー項目を使用してカードを「Basic」カードタイプに変更できます。Basicノートタイプを選択し、カード1を保持し、カード2を破棄するように選択します。
 
-If you have modified the Basic card template to add an unwanted reverse direction, you can modify it back instead:
+Basicカードテンプレートを変更して不要な逆方向を追加した場合は、次の手順で元に戻すことができます：
 
-- Edit a card
-- Click the 'Cards' button
-- You will see one or more tabs at the top representing each card type that will be created. Locate the card type you don't want, click the Options button, and remove the unwanted card template.
+- カードを編集する
+- 「カード」ボタンをクリックする
+- 作成される各カードタイプを表す1つ以上のタブが上部に表示されます。不要なカードタイプを見つけ、オプションボタンをクリックして不要なカードテンプレートを削除します。

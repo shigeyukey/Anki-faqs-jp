@@ -1,21 +1,16 @@
-# Importing/exporting fails due to timestamps in the future
+# 未来の日付によるインポート/エクスポートの失敗
 
-Some shared decks include cards/notes with invalidate creation dates, eg
-they say cards were created in the year 40000 instead of the year 2023.
-This causes a variety of problems, and causes any cards created after
-importing such a deck to end up with similarly-invalid timestamps.
+一部の共有デッキには、無効な作成日を持つカード/ノートが含まれています。例えば、カードが2023年ではなく西暦40000年に作成されたと表示されることがあります。これにより、さまざまな問題が発生し、そのようなデッキをインポートした後に作成されたカードも同様に無効なタイムスタンプを持つことになります。
 
-To prevent this problem spreading, recent Anki versions will refuse to
-export decks that have invalid dates.
+この問題の拡散を防ぐために、最近のAnkiバージョンでは無効な日付を持つデッキのエクスポートを拒否します。
 
-## When exporting
+## エクスポート時
 
-If you receive this message when exporting, you can fix it using one
-of the following methods:
+エクスポート時にこのメッセージが表示された場合、以下の方法のいずれかを使用して修正できます：
 
-- On a 2.1.61+ computer version, use the Tools>Check Database menu item.
-- On AnkiMobile 2.0.90+, use Check Database in the preferences screen.
+- 2.1.61以降のコンピュータ版では、ツール > データベースの確認メニュー項目を使用します。
+- AnkiMobile 2.0.90以降では、設定画面のデータベースの確認を使用します。
 
-## When importing
+## インポート時
 
-The Anki versions mentioned in the previous section can now automatically fix problem decks when importing.
+前述のAnkiバージョンでは、インポート時に問題のあるデッキを自動的に修正できるようになりました。

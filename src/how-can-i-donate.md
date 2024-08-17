@@ -1,20 +1,7 @@
-# How can I donate / contribute?
+# どのように寄付や貢献ができますか？
 
-As Anki is run as a business, it is difficult to accept donations. Instead, we
-make available [AnkiMobile](https://apps.apple.com/us/app/ankimobile-flashcards/id373493387)
-to raise funds for development. You can purchase
-AnkiMobile on your Apple mobile device, and the proceeds from it go towards
-supporting Anki's development.
+Ankiはビジネスとして運営されているため、寄付を受け入れるのは難しいです。その代わりに、開発資金を調達するために [AnkiMobile](https://apps.apple.com/us/app/ankimobile-flashcards/id373493387) を提供しています。AppleのモバイルデバイスでAnkiMobileを購入することで、その収益がAnkiの開発支援に充てられます。
 
-From time to time, people request other ways to contribute, such as by making
-donations via a site like Patreon, or via something like BitCoin. These would
-take time to set up and maintain, as we need to ensure no laws are being broken,
-and relevant taxes are being paid. At the moment we feel that the time is better
-spent working on Anki instead.
+時々、PatreonのようなサイトやBitCoinなどを通じて寄付をしたいというリクエストを受けることがあります。これらを設定して維持するには時間がかかり、法律を遵守し、関連する税金を支払う必要があります。現時点では、その時間をAnkiの開発に費やす方が良いと考えています。
 
-If you're unable to purchase the app for yourself or a friend, there are still
-other ways you can contribute. Answering questions over on the [user
-forums](https://forums.ankiweb.net) is a big help, as every question the
-developers don't need to answer means more time that can be spent working on
-Anki. And if you don't feel comfortable answering questions, telling your
-friends about Anki helps out too.
+自分や友人のためにアプリを購入できない場合でも、他の方法で貢献することができます。[ユーザーフォーラム](https://forums.ankiweb.net) で質問に答えることは大きな助けになります。開発者が答える必要のない質問が増えるほど、Ankiの開発に費やせる時間が増えます。また、質問に答えるのが難しい場合でも、友人にAnkiを紹介することも支援になります。

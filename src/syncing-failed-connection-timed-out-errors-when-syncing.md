@@ -1,33 +1,33 @@
-# 'Syncing failed: Connection timed out' errors when syncing
+# 「同期に失敗しました：接続がタイムアウトしました」エラーが発生する場合
 
-**Antivirus/firewall software on Windows and corporate/school networks**
+**Windowsのアンチウイルス/ファイアウォールソフトウェアおよび企業/学校のネットワーク**
 
-If syncing never appears to make any progress, it is possible that Anki is completely blocked from connecting to the internet. In that case, you may need to add an exception in your antivirus/firewall, or ask your network administrators for assistance. For more information, please see
+同期が全く進行しない場合、Ankiがインターネットへの接続を完全にブロックされている可能性があります。その場合、アンチウイルス/ファイアウォールに例外を追加するか、ネットワーク管理者に支援を依頼する必要があるかもしれません。詳細については、以下をご覧ください：
 
-<https://faqs.ankiweb.net/error-establishing-a-secure-connection-when-syncing.html>
+<https://shigeyukey.github.io/Anki-faqs-jp/error-establishing-a-secure-connection-when-syncing.html>
 
-**If the sync appears to make some progress**
+**同期がある程度進行する場合**
 
-When you sync, Anki sends messages to AnkiWeb, and these messages typically flow through a number of networks and countries before they reach AnkiWeb. If one of the networks between you and the AnkiWeb servers is experiencing issues, this can result in connections that run slowly or terminate abruptly.
+同期を行うと、AnkiはAnkiWebにメッセージを送信しますが、これらのメッセージは通常、AnkiWebに到達するまでにいくつかのネットワークや国を経由します。あなたとAnkiWebサーバーの間のネットワークの1つに問題が発生している場合、接続が遅くなったり、突然切断されたりすることがあります。
 
-A typical cause of this is when your internet provider experiences a problem with one of their international links. When this happens, you may find you can access most other sites without any problems, because those sites are hosted in different geographical locations, and thus your connections to them use different networks. Such problems typically take a few hours to a few days to clear up.
+一般的な原因としては、インターネットプロバイダーが国際リンクの1つに問題を抱えている場合があります。このような場合、他のほとんどのサイトには問題なくアクセスできるかもしれません。なぜなら、それらのサイトは異なる地理的な場所にホストされており、したがってそれらへの接続は異なるネットワークを使用するためです。このような問題は通常、数時間から数日で解消されます。
 
-Sometimes the problems can be caused more locally. If you're on a distant or congested wifi network, that can also cause the connection to AnkiWeb to become unstable.
+時には、問題がよりローカルに発生することもあります。遠く離れた場所や混雑したWi-Fiネットワークを使用している場合、それもAnkiWebへの接続を不安定にする原因となることがあります。
 
-Unstable connections tend to become more apparent the more data you transfer. If you are experiencing packet loss you may find you can load ankiweb.net fine most of the time, but still have issues when syncing - especially if you have a lot of data to transfer.
+不安定な接続は、転送するデータが多いほど顕著になります。パケットロスが発生している場合、ankiweb.netをほとんどの時間で正常に読み込むことができても、同期時に問題が発生することがあります。特に大量のデータを転送する場合に顕著です。
 
-**Working around the issue**
+**問題の回避策**
 
-The best thing to do is try syncing on a different network - using your phone's cellular connection for example, or using your work or school's wifi network. In many cases you will find that resolves the problem, and after waiting a few hours to a few days, the problem with your home network should have gone away.
+最善の方法は、別のネットワークで同期を試みることです。例えば、携帯電話のセルラー接続を使用するか、職場や学校のWi-Fiネットワークを使用することです。多くの場合、それで問題が解決し、数時間から数日待つと、自宅のネットワークの問題が解消されることがあります。
 
-**Determining packet loss**
+**パケットロスの確認**
 
-A tool called 'mtr' can be useful for determining packet loss.
+パケットロスを確認するために「mtr」というツールが役立ちます。
 
 - Windows: <https://sourceforge.net/projects/winmtr/>
 - Mac: <https://www.reddit.com/r/TagPro/comments/2j6qx7/how_to_run_an_mtr_on_mac/>
-- Linux: install 'mtr' from your package manager
+- Linux: パッケージマネージャから「mtr」をインストール
 
-Once installed, you should use mtr to access 'ankiweb.net', and let it run for about 15 minutes. If any of the steps between your device and the AnkiWeb servers show a packet loss above 0%, it indicates instability.
+インストール後、「mtr」を使用して「ankiweb.net」にアクセスし、約15分間実行します。デバイスとAnkiWebサーバーの間のいずれかのステップでパケットロスが0%を超えている場合、それは不安定であることを示しています。
 
-If you are seeing no packet loss at all but are still having problems syncing, you may be having a different problem - please contact us and let us know.
+パケットロスが全く見られないのに同期に問題がある場合は、別の問題が発生している可能性があります。その場合は、私たちに連絡してお知らせください。

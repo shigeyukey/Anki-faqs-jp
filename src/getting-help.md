@@ -1,3 +1,3 @@
-# Getting help
+# ヘルプの取得
 
-Please see <https://docs.ankiweb.net/getting-help.html>
+<https://shigeyukey.github.io/anki-manual-jp/getting-help.html> をご覧ください。

@@ -1,26 +1,26 @@
-# Hiding Decks
+# デッキの非表示
 
-If you do not intend to study a deck for some time do not want to delete it, you may wish to *hide* it. There are two ways to do this.
+しばらくの間デッキを勉強する予定がなく、削除したくない場合は、デッキを「非表示」にすることができます。これには2つの方法があります。
 
-**A) Export the deck and delete it.**
+**A) デッキをエクスポートして削除する。**
 
-1. Choose File → Export. Select `Anki Deck Package (*.apkg)` from the *Export Format* drop-down.
-2. Select the deck to be removed from the *Include* drop-down.
-3. Make sure that *Include scheduling information* and *Include media* are checked—otherwise you will have lost your review history and possibly your media when it comes time to use the deck again.
-4. Click Export and save the apkg file somewhere you can find it again.
-5. Finally, delete the deck from your collection.
+1. ファイル → エクスポートを選択します。エクスポート形式のドロップダウンから「Ankiデッキパッケージ（*.apkg）」を選択します。
+2. インクルードのドロップダウンから削除するデッキを選択します。
+3. 「スケジューリング情報を含む」と「メディアを含む」がチェックされていることを確認します。そうしないと、再度デッキを使用する際にレビュー履歴やメディアが失われる可能性があります。
+4. エクスポートをクリックし、apkgファイルを再度見つけられる場所に保存します。
+5. 最後に、コレクションからデッキを削除します。
 
-You can restore the deck to your collection by choosing File → Import and importing the deck again. It will be restored with the same name it had when you exported it.
+ファイル → インポートを選択し、デッキを再度インポートすることで、デッキをコレクションに復元できます。エクスポート時と同じ名前で復元されます。
 
-**B) Create an "unused" deck.**
+**B) 「未使用」デッキを作成する。**
 
-You can create a tree of decks in Anki by dragging and dropping the decks in the deck list. You can use a combination of this property and options groups to hide decks you do not intend to use:
+Ankiでは、デッキリスト内でデッキをドラッグアンドドロップすることでデッキのツリーを作成できます。この特性とオプショングループを組み合わせて、使用する予定のないデッキを非表示にすることができます：
 
-1. Click *Create Deck* and add a deck called "Unused," "Hidden," or something similar. You can place a tilde (~) before the name (like "~Unused") if you want to force the deck to appear at the bottom of the list.
-2. Drag and drop the deck you wish to hide to underneath the new deck. Then collapse the Unused deck by clicking the minus sign next to the name.
-3. You can stop here if you're happy with this; however, if you leave it this way, due counts will still be displayed. If you would rather get rid of them, continue with step 4.
-4. Click the options button next to the Unused deck and choose Options.
-5. Click the options button in the upper-right-hand corner and add a new options group (you can call it "unused deck" or something similar).
-6. On the New Cards tab, select a new cards/day limit of 0. On the reviews tab, select a maximum reviews/day limit of 0.
+1. 「デッキを作成」をクリックし、「未使用」や「非表示」などの名前でデッキを追加します。名前の前にチルダ（~）を付けると（例：「~未使用」）、デッキがリストの一番下に表示されます。
+2. 非表示にしたいデッキを新しいデッキの下にドラッグアンドドロップします。次に、名前の横にあるマイナス記号をクリックして未使用デッキを折りたたみます。
+3. これで満足ならここで終了しても構いませんが、このままでは期限のカウントが表示され続けます。これを取り除きたい場合は、ステップ4に進みます。
+4. 未使用デッキの横にあるオプションボタンをクリックし、オプションを選択します。
+5. 右上のオプションボタンをクリックし、新しいオプショングループを追加します（「未使用デッキ」などと呼ぶことができます）。
+6. 新しいカードタブで、新しいカード/日の制限を0に設定します。レビュータブで、最大レビュー/日の制限を0に設定します。
 
-To restore the deck, simply drag and drop it back into the main deck list (you can go either to the very top or the very bottom of the list to get the top level). You can leave the Unused deck for future use.
+デッキを復元するには、単にデッキをメインデッキリストにドラッグアンドドロップします（リストの最上部または最下部に移動してトップレベルに戻すことができます）。未使用デッキは将来の使用のためにそのままにしておくことができます。

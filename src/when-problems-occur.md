@@ -1,3 +1,3 @@
-# When problems occur
+# 問題が発生した場合
 
-Please see <https://docs.ankiweb.net/troubleshooting.html>
+<https://shigeyukey.github.io/anki-manual-jp/troubleshooting.html>をご覧ください。

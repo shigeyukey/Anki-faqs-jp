@@ -1,108 +1,70 @@
-# The Anki 2.1 scheduler
+# Anki 2.1 スケジューラ
 
-Anki 2.1 comes with a new scheduler that fixes a number of issues that previous
-Anki versions had.
+Anki 2.1には、以前のAnkiバージョンで発生していた多くの問題を修正する新しいスケジューラが搭載されています。
 
-## Compatibility
+## 互換性
 
-The 2.1 scheduler was introduced in Aug 2018. Support was added to AnkiMobile
-and AnkiWeb around the same time, and AnkiDroid has supported it in releases
-since Oct 2019.
+2.1スケジューラは2018年8月に導入されました。AnkiMobileとAnkiWebも同時期にサポートが追加され、AnkiDroidは2019年10月以降のリリースでサポートしています。
 
-It is not supported by the older Anki 2.0.
+古いAnki 2.0ではサポートされていません。
 
-Anki 2.1.50+/AnkiMobile 2.0.84+ require an update to the 2.1 scheduler.
+Anki 2.1.50+/AnkiMobile 2.0.84+では、2.1スケジューラへのアップデートが必要です。
 
-## Updating
+## アップデート
 
-If you are syncing with AnkiWeb, updating requires a one-way upload to AnkiWeb.
-Please ensure all of your devices are in sync before you update, as otherwise
-you may accidentally overwrite changes made on your other devices.
+AnkiWebと同期している場合、アップデートにはAnkiWebへの一方向のアップロードが必要です。アップデートする前に、すべてのデバイスが同期していることを確認してください。そうしないと、他のデバイスで行った変更を誤って上書きしてしまう可能性があります。
 
-Before updating, it is recommended you export a backup. Using the computer version,
-you can use the File>Export menu item to create a .colpkg file containing all
-decks and scheduling. Using AnkiMobile, you can use the Add/Export option to export
-a colpkg file. In the unlikely case that you run into problems, you will
-be able to restore from the backup.
+アップデートする前に、バックアップをエクスポートすることをお勧めします。コンピュータ版を使用している場合は、ファイル > エクスポートメニュー項目を使用して、すべてのデッキとスケジューリングを含む.colpkgファイルを作成できます。AnkiMobileを使用している場合は、追加/エクスポートオプションを使用してcolpkgファイルをエクスポートできます。問題が発生した場合には、バックアップから復元することができます。
 
-Once you have updated, please sync and choose "Upload" to send the upgraded
-collection to AnkiWeb. Then please sync any other devices you use, choosing
-"Download" on each of them, to bring things back into sync.
+アップデートが完了したら、同期して「アップロード」を選択し、アップグレードされたコレクションをAnkiWebに送信してください。その後、使用している他のデバイスを同期し、それぞれで「ダウンロード」を選択して、すべてを再同期してください。
 
-### Anki 2.1.41+/AnkiMobile 2.0.75+.
+### Anki 2.1.41+/AnkiMobile 2.0.75+
 
-To update, click the Update message shown in the deck list.
+アップデートするには、デッキリストに表示されるアップデートメッセージをクリックしてください。
 
-Unlike older Anki versions, cards in learning will not be reset, and cards in
-filtered decks will remain filtered. The new scheduler handles filtered decks
-differently, so custom steps you may have set will no longer apply, but filtered
-decks with rescheduling enabled will not reset learning cards.
+以前のAnkiバージョンとは異なり、学習中のカードはリセットされず、フィルターデッキ内のカードもフィルタリングされたままです。新しいスケジューラはフィルターデッキを異なる方法で処理するため、設定したカスタムステップは適用されなくなりますが、再スケジューリングが有効なフィルターデッキは学習カードをリセットしません。
 
-You may be asked if you use AnkiDroid 2.14 when updating. It is safe to choose
-"no" here, as AnkiDroid 2.15 has since been released. If you make a mistake when
-prompted, you can adjust the timezone handling in Anki's Preferences screen.
+アップデート時にAnkiDroid 2.14を使用しているかどうかを尋ねられることがあります。この場合、「いいえ」を選択しても問題ありません。AnkiDroid 2.15がリリースされているためです。プロンプトで間違えた場合は、Ankiの設定画面でタイムゾーンの処理を調整できます。
 
-Once you've updated, there is no option to switch back to the old scheduler. While
-it is possible to switch back to an older version of Anki on your computer and then
-change the scheduler in the preferences, please bear in mind that it will
-require your learning cards and filtered decks to be reset.
+一度アップデートすると、古いスケジューラに戻すオプションはありません。コンピュータで古いバージョンのAnkiに戻し、設定でスケジューラを変更することは可能ですが、その場合、学習カードとフィルターデッキをリセットする必要があります。
 
-If you have updated to AnkiMobile 2.0.84+, it will not be possible to return to the
-old scheduler, as Apple do not allow app downgrades.
+AnkiMobile 2.0.84+にアップデートした場合、Appleはアプリのダウングレードを許可していないため、古いスケジューラに戻すことはできません。
 
-### Older Anki versions
+### 古いAnkiバージョン
 
-Older Anki versions reset all cards in learning prior to updating, and move all
-cards in filtered decks back to their original decks. This is problematic for
-people with longer learning steps. If you're in that situation, it is recommended
-you update with 2.1.41 or later.
+古いAnkiバージョンでは、アップデート前に学習中のすべてのカードがリセットされ、フィルターデッキ内のすべてのカードが元のデッキに戻されます。これは、長い学習ステップを持つ人々にとって問題となります。そのような状況にある場合は、2.1.41以降にアップデートすることをお勧めします。
 
-Older versions have an option in the preferences screen to toggle the scheduler
-version.
+古いバージョンには、設定画面でスケジューラのバージョンを切り替えるオプションがあります。
 
-## Changes
+## 変更点
 
-Reviews:
+レビュー:
 
-- When a deck has children, reviews are taken from all children decks at once,
-  instead of showing one deck at a time.
-- The daily review limit is taken from the deck you click on. If you have a deck
-  tree of the form "grandparent::parent::child" and you click on "parent", the
-  limits you have set on "grandparent" and "child" are ignored.
+- デッキに子デッキがある場合、1つのデッキを表示する代わりに、すべての子デッキから一度にレビューが取られます。
+- 日次レビューの制限は、クリックしたデッキから取られます。「grandparent::parent::child」というデッキツリーがあり、「parent」をクリックした場合、「grandparent」と「child」に設定した制限は無視されます。
 
-(Re)learning:
+(再)学習:
 
-- Learning cards have 4 buttons instead of 3 - Hard repeats the current step
-  after the first step, and is the average of Again and Good on the first step.
-- The learn count is now the number of cards, instead of the number of steps
-  required to complete.
-- Suspending/burying cards does not reset a card's learning steps.
-- Lapsed reviews have their next due date updated on the last relearning step,
-  instead of the first step.
-- There is a new option in the preferences screen to show day learning cards
-  before reviews.
-- When cards are in relearning, the Easy button boosts the interval by 1 day.
+- 学習カードには3つではなく4つのボタンがあります。ハードは最初のステップの後に現在のステップを繰り返し、最初のステップではAgainとGoodの平均です。
+- 学習カウントは、完了するために必要なステップ数ではなく、カードの数になりました。
+- カードを一時停止/埋めることは、カードの学習ステップをリセットしません。
+- 失効したレビューは、最初のステップではなく、最後の再学習ステップで次の期日が更新されます。
+- 設定画面に、レビューの前に日間学習カードを表示する新しいオプションがあります。
+- カードが再学習中の場合、イージーボタンは間隔を1日延ばします。
 
-Filtered decks:
+フィルターデッキ:
 
-- Filtered decks no longer reset (re)learning cards when they are built or
-  emptied, and reviews and learning cards will show up in the correct queue
-  instead of the new queue.
-- Filtered decks support a second search term, so you can include 100 cards to
-  review and 20 new cards for example.
-- Scheduling of cards that aren't yet due has been improved, and will show 4
-  buttons instead of 3.
-- Filtered decks no longer support custom steps, and there is now a simple
-  "preview mode" instead of the old option to disable scheduling changes. The
-  new card order does not get forgotten when previewing.
-- Cards can be buried or suspended while remaining in the filtered deck.
+- フィルターデッキは、構築または空にされたときに(再)学習カードをリセットせず、レビューと学習カードは新しいキューではなく正しいキューに表示されます。
+- フィルターデッキは2つ目の検索条件をサポートするため、例えば100枚のレビューカードと20枚の新しいカードを含めることができます。
+- まだ期日が来ていないカードのスケジューリングが改善され、3つではなく4つのボタンが表示されます。
+- フィルターデッキはカスタムステップをサポートしなくなり、スケジューリングの変更を無効にする古いオプションの代わりにシンプルな「プレビューモード」があります。プレビュー時に新しいカードの順序は忘れられません。
+- カードはフィルターデッキに残ったまま埋めたり一時停止したりできます。
 
-Other changes:
+その他の変更点:
 
-- "Next day starts at" is now relative to the current timezone.
-- Anki now distinguishes between manually and automatically buried cards, and
-  you can unbury one set without the other.
+- 「次の日の開始」は現在のタイムゾーンに相対的になりました。
+- Ankiは手動で埋められたカードと自動で埋められたカードを区別するようになり、一方を解除しても他方は解除されません。
 
-## 2021 updates
+## 2021年の更新
 
-Updates to the V2 scheduler are currently in [beta testing](./the-2021-scheduler.md).
+V2スケジューラの更新は現在[ベータテスト中](./the-2021-scheduler.md)です。

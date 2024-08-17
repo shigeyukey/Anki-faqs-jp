@@ -1,21 +1,13 @@
-# Requesting a refund for AnkiMobile
+# AnkiMobileの返金をリクエストする
 
-If you're having a problem with AnkiMobile, please let us know and we'll do our best to help you resolve it.
+AnkiMobileに問題がある場合は、お知らせください。解決するために最善を尽くします。
 
-The App Store is run by Apple. When you purchase an app on it, you pay money to Apple. They keep part of your money, and
-send the remainder to us about a month later. They do not tell us who has purchased the app, and do not
-give us any ability to confirm you've made a purchase, or to initiate a refund. For this reason, any
-refund requests need to be made to Apple directly.
+App StoreはAppleによって運営されています。アプリを購入すると、Appleにお金を支払います。Appleはその一部を保持し、残りを約1か月後に私たちに送金します。Appleは誰がアプリを購入したかを私たちに知らせず、購入を確認したり、返金を開始したりする能力を私たちに与えません。このため、返金リクエストはAppleに直接行う必要があります。
 
-Please note that except when required by law, refunds are at Apple's discretion. If it's your first time requesting a refund,
-there's a good chance they'll refund your money, but this is not guaranteed.
+法律で義務付けられている場合を除き、返金はAppleの裁量に委ねられます。初めて返金をリクエストする場合、返金される可能性が高いですが、保証はありません。
 
-Please see the following page for more information:
+詳細については、次のページをご覧ください：
 
 <https://support.apple.com/en-au/118223>
 
-We have heard reports that some Apple Support representatives, when refusing a refund, are suggesting you
-contact us instead. That is misleading, as they know we do not have access to your payment details,
-and cannot confirm you've purchased the app, or remove your access to it. If Apple have refused to refund you,
-unfortunately that is not something we can change.
-
+一部のAppleサポート担当者が返金を拒否する際に、代わりに私たちに連絡するよう提案しているという報告を受けています。それは誤解を招くものであり、彼らは私たちがあなたの支払い情報にアクセスできず、アプリの購入を確認したり、アクセスを削除したりできないことを知っています。Appleが返金を拒否した場合、残念ながらそれを変更することはできません。

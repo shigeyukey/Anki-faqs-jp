@@ -1,10 +1,10 @@
-# Extra copies of a card are coming up
+# カードの複製が表示される
 
-Occasionally you may have been editing a note type and later discover that a number of cards are duplicated (sometimes there may even be more copies).
+時々、ノートタイプを編集していると、多くのカードが重複していることに気づくことがあります（場合によってはさらに多くのコピーがあることもあります）。
 
-You can fix this as follows:
-1. Find one of the duplicated cards in the browser.
-2. Click the Cards button.
-3. Select each card type in the top drop-down box in turn, and compare the contents of the template fields and card preview pane. If the card types are identical, delete one of them (Options → Delete).
+以下の手順で修正できます：
+1. ブラウザで重複しているカードの1つを見つけます。
+2. 「カード」ボタンをクリックします。
+3. 上部のドロップダウンボックスで各カードタイプを順に選択し、テンプレートフィールドとカードプレビューペインの内容を比較します。カードタイプが同一である場合は、1つを削除します（オプション → 削除）。
 
-This should remove all the duplicate cards that use this note type. (If you are still having problems, it's possible that multiple note types have the issue, in which case you can repeat these steps with a card of the other note type.)
+これで、このノートタイプを使用するすべての重複カードが削除されるはずです。（それでも問題が解決しない場合、複数のノートタイプに問題がある可能性があるため、他のノートタイプのカードでも同じ手順を繰り返してください。）

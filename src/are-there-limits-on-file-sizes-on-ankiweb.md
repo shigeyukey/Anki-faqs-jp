@@ -1,11 +1,11 @@
-# Are there limits on file sizes on AnkiWeb?
+# AnkiWebのファイルサイズに制限はありますか？
 
-Collections on AnkiWeb are limited to a compressed size of 100MB, and an uncompressed size of 250MB. This includes the text on your cards and the scheduling information, but does not include sounds/images, as they are stored separately.
+AnkiWebのコレクションは、圧縮サイズで100MB、非圧縮サイズで250MBに制限されています。これにはカードのテキストやスケジューリング情報が含まれますが、サウンドや画像は別途保存されるため含まれません。
 
-Most users will never reach the limit. 25,000 average-sized cards and several years of review history will take up about 25MB, so to hit the limit you usually need to either be copying large amounts of text into each card, or filling your collection with hundreds of thousands of new cards that you aren't actually studying.
+ほとんどのユーザーはこの制限に達することはありません。25,000枚の平均サイズのカードと数年分のレビュー履歴で約25MBを使用するため、制限に達するには通常、各カードに大量のテキストをコピーするか、実際には学習していない何十万もの新しいカードでコレクションを埋める必要があります。
 
-At the moment there are no limits on the size of your media, although the size of individual media files is limited to 100MB.
+現時点では、メディアのサイズに制限はありませんが、個々のメディアファイルのサイズは100MBに制限されています。
 
-As the usage of Anki and AnkiWeb increases, at some point a pricing system may be introduced where basic, low-capacity accounts are free and heavier users can pay more for more space.
+AnkiとAnkiWebの使用が増加するにつれて、基本的な低容量アカウントは無料で提供され、より多くのスペースを必要とするヘビーユーザーは追加料金を支払うという価格体系が導入される可能性があります。
 
-If you have hit the collection size limit, you will see messages about the collection being in an inconsistent state when you do a one way upload to AnkiWeb. It is not possible to increase the limit, because such large collections slow down AnkiWeb for other users. If you have imported a dictionary's worth of content, you will need to move some unused cards to a separate deck, export the deck, and then delete the deck from your collection. After doing so, Tools>Check Database can be used to free up space that was taken by the deleted cards.
+コレクションサイズの制限に達した場合、AnkiWebへの一方向アップロード時にコレクションが不整合状態であるというメッセージが表示されます。この制限を増やすことはできません。なぜなら、非常に大きなコレクションは他のユーザーにとってAnkiWebの動作を遅くするからです。辞書の内容をインポートした場合、未使用のカードを別のデッキに移動し、そのデッキをエクスポートしてからコレクションから削除する必要があります。その後、ツール > データベースのチェックを使用して、削除されたカードによって占有されていたスペースを解放できます。

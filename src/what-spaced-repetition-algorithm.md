@@ -1,119 +1,65 @@
-# What spaced repetition algorithm does Anki use?
+# Ankiはどのような間隔反復アルゴリズムを使用していますか？
 
-As of Anki 23.10, Anki has two available algorithms. The first one is based on
-the [SuperMemo 2 algorithm](http://www.supermemo.com/english/ol/sm2.htm), and
-the second one is called [FSRS](https://github.com/open-spaced-repetition).
+Anki 23.10の時点で、Ankiには2つの利用可能なアルゴリズムがあります。最初のものは[SuperMemo 2アルゴリズム](http://www.supermemo.com/english/ol/sm2.htm)に基づいており、2つ目は[FSRS](https://github.com/open-spaced-repetition)と呼ばれます。
 
-Anki’s algorithm differs from SM-2 in some respects. Notably:
+Ankiのアルゴリズムはいくつかの点でSM-2と異なります。特に：
 
-- SM-2 defines an initial interval of 1 day then 6 days. With Anki,
-  you have full control over the length of the initial learning steps.
-  Anki understands that it can be necessary to see a new card a number
-  of times before you’re able to memorize it, and those initial
-  "failures" don’t mean you need to be punished by being shown the
-  failed card many times over the course of a few days. Performance
-  during the learning stage does not reflect performance in the
-  retaining stage.
+- SM-2は初期間隔を1日、その後6日と定義していますが、Ankiでは初期学習ステップの長さを完全に制御できます。Ankiは、新しいカードを覚える前に何度も見る必要があることがあると理解しており、その初期の「失敗」が数日間にわたって何度も失敗カードを表示する必要があることを意味しないことを理解しています。学習段階でのパフォーマンスは、保持段階でのパフォーマンスを反映しません。
 
-- Anki uses 4 choices for answering review cards, not 6. There is only
-  one _fail_ choice, not 3. The reason for this is that failure
-  comprises a small amount of total reviews, and thus adjusting a
-  card’s ease can be sufficiently done by simply varying the positive
-  answers.
+- Ankiはレビューカードに対して4つの選択肢を使用しますが、6つではありません。失敗の選択肢は1つだけで、3つではありません。これは、失敗が総レビューのごく一部を占めるため、カードのイーズを調整するには、ポジティブな回答を変えるだけで十分だからです。
 
-- Answering cards later than scheduled will be factored into the next
-  interval calculation, so you receive a boost to cards that you were
-  late in answering but still remembered.
+- 予定より遅れてカードに回答した場合、その次の間隔計算に反映されるため、遅れて回答したがまだ覚えていたカードにはブーストがかかります。
 
-- Like SM-2, Anki’s failure button resets the card interval by
-  default. But the user can choose to have the card’s interval reduced
-  instead of being reset completely. Also, you can elect to review
-  failed mature cards on a different day, instead of the same day.
+- SM-2と同様に、Ankiの失敗ボタンはデフォルトでカードの間隔をリセットします。しかし、ユーザーはカードの間隔を完全にリセットするのではなく、減少させることを選択できます。また、失敗した成熟カードを同じ日ではなく別の日にレビューすることも選択できます。
 
-- _Remembered easily_ not only increments the ease factor, but adds an
-  extra bonus to the current interval calculation. Thus, answering
-  _remembered easily_ is a little more aggressive than the standard
-  SM-2 algorithm.
+- 「簡単に覚えた」はイーズファクターを増加させるだけでなく、現在の間隔計算に追加のボーナスを加えます。したがって、「簡単に覚えた」に回答することは、標準のSM-2アルゴリズムよりも少し積極的です。
 
-- Successive failures while cards are in learning do not result in
-  further decreases to the card’s ease. A common complaint with the
-  standard SM-2 algorithm is that repeated failings of a card cause
-  the card to get stuck in "low interval hell". In Anki, the initial
-  acquisition process does not influence a card’s ease.
+- 学習中のカードが連続して失敗しても、カードのイーズがさらに低下することはありません。標準のSM-2アルゴリズムに対する一般的な不満は、カードが繰り返し失敗すると「低間隔地獄」に陥ることです。Ankiでは、初期の習得プロセスがカードのイーズに影響を与えません。
 
-The scheduling code can be found in `rslib/src/scheduler/states`. Here is a summary
-(see the [deck options](https://docs.ankiweb.net/deck-options.html)
-section of the manual for the options that are mentioned in _italics_):
+スケジューリングコードは`rslib/src/scheduler/states`にあります。ここに概要を示します（_イタリック_で示されているオプションについては、マニュアルの[デッキオプション](https://shigeyukey.github.io/anki-manual-jp/deck-options.html)セクションを参照してください）。
 
-## Learning/Relearning Cards
+## 学習/再学習カード
 
-If you press…​
+次のボタンを押すと…​
 
-- Again  
-  Moves the card back to the first step setted in [Learning/Relearning Steps.](https://docs.ankiweb.net/deck-options.html?#learning-steps)
+- 再度  
+  カードを[学習/再学習ステップ](https://shigeyukey.github.io/anki-manual-jp/deck-options.html?#学習ステップ)で設定された最初のステップに戻します。
 
-- Hard  
-  Repeats the current step after the first step, and is the average of
-  Again and Good.
+- 難しい  
+  最初のステップの後に現在のステップを繰り返し、「再度」と「良い」の平均になります。
 
-- Good  
-  Moves the card to the [next step](https://docs.ankiweb.net/deck-options.html?#learning-steps).
-  If the card was on the final step, the card is converted into a
-  review card (it 'graduates').
+- 良い  
+  カードを[次のステップ](https://shigeyukey.github.io/anki-manual-jp/deck-options.html?#学習ステップ)に進めます。カードが最終ステップにあった場合、カードはレビューカードに変換されます（「卒業」します）。
 
-- Easy
-  Immediately converts the card into a review card.
+- 簡単  
+  カードを即座にレビューカードに変換します。
 
-New cards have no ease, so no matter how many times you press
-'Again' or 'Hard', the future ease factor of the card won't be affected.
-The same can be said about relearning cards: pressing 'Again'
-or 'Hard' won't have any effect over the card's ease.
+新しいカードにはイーズがないため、「再度」や「難しい」を何度押しても、カードの将来のイーズファクターには影響しません。再学習カードについても同様で、「再度」や「難しい」を押してもカードのイーズには影響しません。
 
-## Review Cards
+## レビューカード
 
-In SM-2, once a card is graduated, it gets an ease factor. By default is 2.5, but you
-can set another value using the [Deck Options](https://docs.ankiweb.net/deck-options.html?#starting-ease).
+SM-2では、カードが卒業するとイーズファクターが設定されます。デフォルトは2.5ですが、[デッキオプション](https://shigeyukey.github.io/anki-manual-jp/deck-options.html?#初期の容易さ)を使用して別の値に設定することもできます。
 
-If you press…​
+次のボタンを押すと…​
 
-- Again  
-  The card is placed into relearning mode, the ease is decreased by 20
-  percentage points (that is, 20 is subtracted from the _ease_ value,
-  which is in units of percentage points), and the current interval is
-  multiplied by the value of _new interval_ (this interval will be used
-  when the card exits relearning mode).
+- もう一回  
+  カードは再学習モードに入り、イーズが20パーセンテージポイント減少します（つまり、イーズ値から20が引かれます。イーズ値はパーセンテージポイント単位です）。現在の間隔は_新しい間隔_の値で掛けられます（この間隔はカードが再学習モードを終了するときに使用されます）。
 
-- Hard  
-  The card’s ease is decreased by 15 percentage points and the current
-  interval is multiplied by the value of _hard interval_ (1.2 by default)
+- 難しい  
+  カードのイーズが15パーセンテージポイント減少し、現在の間隔は_難しい間隔_の値で掛けられます（デフォルトは1.2）。
 
-- Good  
-  The current interval is multiplied by the current ease. The ease is
-  unchanged.
+- 正解  
+  現在の間隔は現在のイーズで掛けられます。イーズは変更されません。
 
-- Easy  
-  The current interval is multiplied by the current ease times the _easy
-  bonus_ and the ease is increased by 15 percentage points.
+- 簡単  
+  現在の間隔は現在のイーズに_簡単ボーナス_を掛けた値で掛けられ、イーズは15パーセンテージポイント増加します。
 
-For Hard, Good, and Easy, the next interval is additionally multiplied
-by the _interval modifier_. If the card is being reviewed late,
-additional days will be added to the current interval, as described
-in a [previous FAQ.](https://faqs.ankiweb.net/due-times-after-a-break.html)
+難しい、正解、簡単のいずれの場合も、次の間隔はさらに_間隔修正値_で掛けられます。カードが遅れてレビューされている場合、追加の日数が現在の間隔に加算されます。詳細は[以前のFAQ](https://shigeyukey.github.io/Anki-faqs-jp/due-times-after-a-break.html)に記載されています。
 
-## Limitations
+## 制限事項
 
-There are a few limitations on the scheduling values that cards can
-take. Eases will never be decreased below 130%; SuperMemo’s research has
-shown that eases below 130% tend to result in cards becoming due more
-often than is useful and annoying users. Intervals will never be
-increased beyond the value of _maximum interval_. Finally, all new
-intervals (except Again) will always be at least one day longer than the
-previous interval.
+カードが取ることができるスケジューリング値にはいくつかの制限があります。イーズは130%未満には減少しません。SuperMemoの研究によると、130%未満のイーズはカードが有用以上に頻繁に期日になる傾向があり、ユーザーを苛立たせることが示されています。間隔は_最大間隔_の値を超えて増加することはありません。最後に、すべての新しい間隔（再度を除く）は、常に前の間隔より少なくとも1日長くなります。
 
-## Why doesn’t Anki use SuperMemo’s latest algorithm?
+## なぜAnkiはSuperMemoの最新アルゴリズムを使用しないのですか？
 
-The simple answer is that SuperMemo’s latest algorithm is proprietary,
-and requires licensing. As Anki is an open source application, it can
-only make use of algorithms that have been made freely available, such as
-FSRS. [Preliminary tests](https://github.com/open-spaced-repetition/fsrs-vs-sm17)
-seem to indicate FSRS is roughly on par with SM17.
+簡単な答えは、SuperMemoの最新アルゴリズムが独自のものであり、ライセンスが必要だからです。Ankiはオープンソースのアプリケーションであるため、FSRSのように自由に利用できるアルゴリズムしか使用できません。[予備調査](https://github.com/open-spaced-repetition/fsrs-vs-sm17)によると、FSRSはSM17とほぼ同等であるようです。

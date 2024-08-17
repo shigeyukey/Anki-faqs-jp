@@ -1,13 +1,13 @@
-# Sound/image media files have gone missing!
+# 音声/画像メディアファイルが見つかりません！
 
-Anki stores your cards' sound and image files on your computer, in your [Anki folder](https://docs.ankiweb.net/files.html#file-locations), in User 1/collection.media. If you delete any files from that folder, Anki notes they have been removed and on the next sync it will remove them from your other devices as well. What sometimes happens is users tidy up files on their computer, and accidentally remove the sounds and images that their cards use, resulting in sounds not playing or images not appearing. This is particularly easy to do accidentally on a Mac with the "all my files" feature of the Finder, but can happen on other platforms as well.
+Ankiはカードの音声および画像ファイルをコンピュータの[Ankiフォルダ](https://shigeyukey.github.io/anki-manual-jp/files.html#ファイルの場所)内のUser 1/collection.mediaに保存します。このフォルダからファイルを削除すると、Ankiはそれらが削除されたことを認識し、次回の同期時に他のデバイスからもそれらを削除します。時々、ユーザーがコンピュータ上のファイルを整理している際に、誤ってカードで使用している音声や画像を削除してしまい、その結果、音声が再生されなかったり画像が表示されなくなったりすることがあります。これは特に、Finderの「すべてのファイル」機能を持つMacで誤って行うことが簡単ですが、他のプラットフォームでも発生する可能性があります。
 
-You can use Anki's Tools>Check Media function to find out which images are missing from your collection by looking at the "Used on cards but missing from media folder" section.
+Ankiのツール>メディアのチェック機能を使用して、コレクションから欠落している画像を「カードで使用されているがメディアフォルダに存在しない」セクションで確認できます。
 
-If you've accidentally deleted the files your cards were using, you may be able to restore them from your recycle bin / trash can if the trash has not been emptied yet. Placing them back in the collection.media folder should cause the media to work again.
+カードで使用していたファイルを誤って削除してしまった場合、ゴミ箱がまだ空になっていなければ、ゴミ箱から復元できるかもしれません。それらをcollection.mediaフォルダに戻すことで、メディアが再び機能するはずです。
 
-If you are unable to recover your media from any of your devices, we may be able to restore it from AnkiWeb's backups for you if it was deleted recently.
+どのデバイスからもメディアを復元できない場合、最近削除されたものであれば、AnkiWebのバックアップから復元できるかもしれません。
 
-If you've lost your sound and images, but had obtained them from a shared deck, if the shared deck is still available you can import it into a new profile, and then copy the sounds and images from it into your original collection to restore the data.
+音声や画像を失ったが、共有デッキから取得したものであれば、共有デッキがまだ利用可能な場合、新しいプロファイルにインポートし、そこから音声や画像をコピーして元のコレクションに戻すことでデータを復元できます。
 
-When editing fields, Anki shows the names of sound files. To see the names of image files, you can press ctrl+shift+x while the cursor is in the field with the image (cmd+shift+x on a Mac). For an image or sound file to work, a file with the exact same file name must be in the collection.media folder.
+フィールドを編集する際、Ankiは音声ファイルの名前を表示します。画像ファイルの名前を確認するには、画像が含まれているフィールドにカーソルを置いた状態でctrl+shift+x（Macではcmd+shift+x）を押します。音声ファイルや画像ファイルが機能するためには、完全に同じファイル名のファイルがcollection.mediaフォルダに存在する必要があります。

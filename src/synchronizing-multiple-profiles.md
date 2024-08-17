@@ -1,9 +1,9 @@
-# Synchronizing multiple profiles
+# 複数のプロファイルを同期する
 
-**Profiles** are a feature designed to allow multiple people to study with Anki on the same device. They may also be useful for testing and other similar purposes, but this is not their primary purpose. Profiles are *not* recommended for dividing up your content, as doing so is unnecessary and limits your options in terms of viewing statistics and moving content around. Profiles are also unsupported on AnkiDroid.
+**プロファイル**は、複数の人が同じデバイスでAnkiを使用して学習できるように設計された機能です。また、テストやその他の類似の目的にも役立ちますが、これは主な目的ではありません。プロファイルはコンテンツを分割するために使用することは推奨されません。そうすることは不要であり、統計の表示やコンテンツの移動に関するオプションが制限されるためです。プロファイルはAnkiDroidではサポートされていません。
 
-Anki is designed so that each profile syncs with a single AnkiWeb account – this way, each user can have their own account and use it on whichever devices they want.
+Ankiは各プロファイルが単一のAnkiWebアカウントと同期するように設計されています。この方法では、各ユーザーが自分のアカウントを持ち、任意のデバイスで使用できます。
 
-If you have created multiple profiles for yourself, the best option is to merge them into a single profile. You can do so by exporting one deck from profile A, and then importing it into profile B, repeating for any other decks in profile A, until everything is in profile B.
+自分自身のために複数のプロファイルを作成した場合、最善の方法はそれらを単一のプロファイルに統合することです。プロファイルAからデッキをエクスポートし、それをプロファイルBにインポートすることで、プロファイルAのすべてのデッキがプロファイルBに統合されるまでこの操作を繰り返します。
 
-If you have different users on your computer, each user will need to set up a separate AnkiWeb account for their profile. Attempting to sync different profiles with the same AnkiWeb account will result in lost data.
+コンピュータに異なるユーザーがいる場合、各ユーザーは自分のプロファイルに対して別々のAnkiWebアカウントを設定する必要があります。異なるプロファイルを同じAnkiWebアカウントと同期しようとすると、データが失われる可能性があります。

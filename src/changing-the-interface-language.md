@@ -1,5 +1,5 @@
-# Changing the interface language
+# インターフェース言語の変更
 
-By default, Anki displays interface text such as menus and dialog boxes in the language you selected when you ran Anki for the first time. If you selected wrong or want to use multiple languages, you can change the language in Anki's preferences screen (ctrl+p on Windows/Linux, cmd+, on OS X). After selecting a new language, restart Anki for the new language to take effect.
+デフォルトでは、Ankiは初回起動時に選択した言語でメニューやダイアログボックスなどのインターフェーステキストを表示します。選択を誤った場合や複数の言語を使用したい場合は、Ankiの設定画面（Windows/Linuxではctrl+p、OS Xではcmd+,）で言語を変更できます。新しい言語を選択した後、Ankiを再起動すると新しい言語が反映されます。
 
-If you've just started using Anki, after restarting, use File>Switch Profile to create a new profile that will use the language you've selected - otherwise things like field names will be in the previous language.
+Ankiを使い始めたばかりの場合、再起動後に「ファイル > プロファイルの切り替え」を使用して、新しく選択した言語を使用する新しいプロファイルを作成してください。そうしないと、フィールド名などが以前の言語のままになります。

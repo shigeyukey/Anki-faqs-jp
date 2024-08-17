@@ -1,20 +1,20 @@
-# Resetting progress in a deck
+# デッキの進行状況をリセットする
 
-Sometimes you may want to "reset" part of your collection so that the cards become new again and the scheduling algorithm starts from the beginning. For instance, you might have completely changed a card or updated it so that you need to start learning it again, or you may have flipped through some cards without really studying if you were just trying to take a look at the cards or figure out how Anki works.
+コレクションの一部を「リセット」して、カードを再び新しい状態にし、スケジューリングアルゴリズムを最初から開始させたい場合があります。例えば、カードを完全に変更したり更新したりして再び学習を始める必要がある場合や、Ankiの使い方を確認するためにカードをざっと見ただけで実際には学習していない場合などです。
 
-**Resetting part of your collection because you are behind is not recommended.** While it can be tough to recover from a backlog of cards, erasing all the progress you have made is the worst possible thing you can do: you will still remember many of those cards, and you'll have to start them all over even though you could have pushed "easy." Instead, consider setting up a [daily review limit](https://docs.ankiweb.net/deck-options.html#daily-limits) ("maximum reviews/day" in the options) and studying a set number of the overdue cards each day until you catch up.
+**遅れを取り戻すためにコレクションの一部をリセットすることはお勧めしません。** カードのバックログから回復するのは難しいかもしれませんが、これまでの進行状況をすべて消去することは最悪の選択です。多くのカードをまだ覚えているでしょうし、「簡単」を押すだけで済むのに、すべてを最初からやり直すことになります。代わりに、[1日のレビュー制限](https://shigeyukey.github.io/anki-manual-jp/deck-options.html#日次制限)（オプションの「1日の最大レビュー数」）を設定し、毎日一定数の未処理カードを学習して追いつくことを検討してください。
 
-Resetting cards within Anki
+Anki内でカードをリセットする
 --------------------------------
 
-1. Find the cards you want to reset in the browser.
-2. Select all the cards and choose **Cards**->**Reset** (or **Cards**->**Forget** in older versions).
+1. ブラウザでリセットしたいカードを見つけます。
+2. すべてのカードを選択し、**カード**->**リセット**（または古いバージョンでは**カード**->**忘れる**）を選択します。
 
-When you do this, Anki will turn the cards back into new cards. If you click **Info** in the browser you'll see any previous reviews you've done listed there, but that history will not influence how the cards are scheduled: they will be treated just like new cards.
+これを行うと、Ankiはカードを新しいカードに戻します。ブラウザで**情報**をクリックすると、以前に行ったレビューが表示されますが、その履歴はカードのスケジューリングには影響しません。カードは新しいカードとして扱われます。
 
-Removing the review history
+レビュー履歴の削除
 ---------------------------------
 
-If you accidentally imported the review history of someone else, because they shared their deck with scheduling, you can use the following add-on to remove the history of cards you have selected.
+他の人のレビュー履歴を誤ってインポートしてしまった場合（デッキをスケジューリングと共に共有したため）、選択したカードの履歴を削除するために次のアドオンを使用できます。
 
 <https://ankiweb.net/shared/info/2089200096>

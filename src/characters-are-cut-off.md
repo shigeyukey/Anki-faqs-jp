@@ -1,12 +1,12 @@
-# Characters are cut off
+# 文字が切れて表示される
 
-If you find that parts of your characters are missing, the font you're using is probably not appropriate for the language you're studying. To fix this:
+文字の一部が欠けて表示される場合、使用しているフォントが学習している言語に適していない可能性があります。これを修正するには、以下の手順を試してください：
 
-* While an affected card is shown, click Edit, then Cards. 
-* Click the Add Field button.
-* Select Front or Back, depending on which side you want the field to be shown on.
-* Choose a font that is intended for the language you're studying.
-* After clicking OK, you should see the field appear a second time on your card, and this time it should appear correctly. If it doesn't, add the field again and try a different font.
-* Remove any other {{field}} references on the left side, so that the field only appears once on your card.
+* 問題のあるカードを表示している間に「編集」をクリックし、「カード」を選択します。
+* 「フィールドを追加」ボタンをクリックします。
+* 表示したい側に応じて「表」または「裏」を選択します。
+* 学習している言語に適したフォントを選択します。
+* 「OK」をクリックすると、フィールドがカードに2回表示されるはずです。今回は正しく表示されるはずです。表示されない場合は、フィールドを再度追加し、別のフォントを試してください。
+* 左側の他の {{field}} 参照を削除し、フィールドがカードに1回だけ表示されるようにします。
 
-If you're using Windows, you may need to install language support for the language you want to use in Windows first. After rebooting, any newly added fonts should become available to Anki.
+Windowsを使用している場合、まず使用したい言語のサポートをWindowsにインストールする必要があるかもしれません。再起動後、新しく追加されたフォントがAnkiで利用できるようになります。

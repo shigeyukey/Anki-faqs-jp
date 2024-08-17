@@ -1,19 +1,19 @@
-# Splitting a field into multiple fields
+# フィールドを複数のフィールドに分割する
 
-## Recent Anki versions
+## 最近のAnkiバージョン
 
-With recent Anki versions, there is no need to export+import. An example is provided here:
+最近のAnkiバージョンでは、エクスポートとインポートを行う必要はありません。以下に例を示します：
 
 https://forums.ankiweb.net/t/cloze-type-to-basic-type/23305/2
 
-## Older Anki versions
+## 古いAnkiバージョン
 
-Sometimes you may create a deck, or download a shared deck, with several things in one field, such as text and audio, but then later decide that you would rather have the information in two fields so that you can have more precise control over what displays on each card. One option is to add a new field and then manually cut and paste the content between fields; this may be the fastest if you have less than a hundred cards or so, but otherwise it will be very tedious and slow. Here is a method you can use based on exporting to a text file and doing a search and replace; as an example, we'll focus on
+デッキを作成したり、共有デッキをダウンロードしたりするときに、テキストや音声などが1つのフィールドに含まれていることがありますが、後で各カードに表示される内容をより正確に制御するために、情報を2つのフィールドに分けたいと思うことがあります。1つの方法は、新しいフィールドを追加し、手動で内容をフィールド間でカットアンドペーストすることです。カードが100枚未満の場合、これが最も速い方法かもしれませんが、それ以上の場合は非常に面倒で遅くなります。以下は、テキストファイルにエクスポートして検索と置換を行う方法です。例として、以下の手順に焦点を当てます：
 
-1. If the field you want to split is the first field, make a different field the first field by using the **Reposition** button in the Fields dialog.. This field needs to be unique, so that no two cards have the same content in that field. If you don't have any unique fields except the one you're trying to split, you can use the [add note ID](https://ankiweb.net/shared/info/1672832404) add-on to add a unique field to the notes.
-2. Export the entire deck to a text file, using the **Notes in plain text** choice.
-3. Add a new field to your note type. The new field should come immediately after the one that you're trying to split, so if you had a "Word and Audio" field, you could rename it to "Word" and then add an "Audio" field and reposition it to go after the "Word" field.
-4. Open the text file and do the search and replace. If your text editor supports a certain form of regular expressions, this might work for the expression: `s/\[sound/\t\[sound/`. Otherwise, if you're not sure how to form the expression, you can ask on the Community section or look for regular expression help on the Internet.
-5. Import the text file back into your collection, making sure to use the correct note type and deck. Your notes will be updated with the newly split field.
+1. 分割したいフィールドが最初のフィールドである場合、フィールドダイアログの**再配置**ボタンを使用して、別のフィールドを最初のフィールドにします。このフィールドは一意である必要があり、そのフィールドに同じ内容を持つカードが2枚以上存在しないようにします。分割しようとしているフィールド以外に一意のフィールドがない場合は、[ノートIDを追加](https://ankiweb.net/shared/info/1672832404)アドオンを使用してノートに一意のフィールドを追加できます。
+2. **プレーンテキストのノート**オプションを使用して、デッキ全体をテキストファイルにエクスポートします。
+3. ノートタイプに新しいフィールドを追加します。新しいフィールドは、分割しようとしているフィールドの直後に来るようにします。例えば、「単語と音声」フィールドがある場合、それを「単語」にリネームし、「音声」フィールドを追加して「単語」フィールドの後に配置します。
+4. テキストファイルを開き、検索と置換を行います。テキストエディタが特定の形式の正規表現をサポートしている場合、次の表現が機能するかもしれません：`s/\[sound/\t\[sound/`。それ以外の場合、表現の作成方法がわからない場合は、コミュニティセクションで質問するか、インターネットで正規表現のヘルプを探してください。
+5. テキストファイルをコレクションに再インポートし、正しいノートタイプとデッキを使用するようにします。ノートは新しく分割されたフィールドで更新されます。
 
-If you run into problems, please ask on the Community category, as this is outside the scope of the official support we can provide for Anki.
+問題が発生した場合は、公式サポートの範囲外であるため、コミュニティカテゴリで質問してください。

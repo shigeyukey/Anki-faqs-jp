@@ -1,43 +1,35 @@
-# Running from Python
+# Pythonからの実行
 
-If you experience startup problems or crashes with the packaged builds of Anki
-that you are unable to resolve, you can try running directly via Python as a
-last resort.
+パッケージ化されたAnkiのビルドで起動問題やクラッシュが発生し、それを解決できない場合、最終手段としてPythonから直接実行することを試みることができます。
 
-The instructions below are provided for Windows users, as these problems seem
-most prevalent on Windows, but a similar approach can be taken on other
-platforms too.
+以下の手順は、これらの問題がWindowsで最も多く発生するため、Windowsユーザー向けに提供されていますが、他のプラットフォームでも同様のアプローチを取ることができます。
 
-1. Install <https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe>. Customize
-   the install location, and choose `c:\python`
-2. Open the Start menu, and open a Command Prompt.
-3. Type in the following and hit enter:
+1. <https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe> をインストールします。インストール場所をカスタマイズし、`c:\python` を選択します。
+2. スタートメニューを開き、コマンドプロンプトを開きます。
+3. 次のコマンドを入力してEnterキーを押します：
 
 ```
 \python\python -m venv \anki-venv
 ```
 
-4. And then the following, which will take a while:
+4. 次に、以下のコマンドを入力します。これにはしばらく時間がかかります：
 
 ```
 \anki-venv\scripts\pip install aqt orjson pyqt6-webengine
 ```
 
-5. Finally:
+5. 最後に：
 
 ```
 \anki-venv\scripts\anki
 ```
 
-If that solves your problem, you can start Anki again in the future by repeating
-steps 2 and 5.
+これで問題が解決した場合、今後Ankiを再起動するには、手順2と5を繰り返してください。
 
-If you still experience problems, you can try changing the Qt version:
+それでも問題が解決しない場合は、Qtのバージョンを変更してみてください：
 
 ```
 \anki-venv\scripts\pip install pyqt5==5.15 pyqtwebengine==5.15.0
 ```
 
-If that does not help either, and you have already followed all the steps on
-[when problems occur](./when-problems-occur.md), then you may unfortunately be
-out of luck.
+それでも解決しない場合、そして[問題が発生した場合](./when-problems-occur.md)の手順をすべて実行した場合は、残念ながら運が悪いかもしれません。

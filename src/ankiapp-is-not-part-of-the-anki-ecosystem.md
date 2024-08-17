@@ -1,3 +1,3 @@
-# AnkiApp is not part of the Anki ecosystem
+# AnkiAppはAnkiエコシステムの一部ではありません
 
-Please see [Anki knockoffs](./anki-knockoffs.md).
+[Ankiの模倣品](./anki-knockoffs.md)をご覧ください。

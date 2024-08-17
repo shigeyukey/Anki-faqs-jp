@@ -1,13 +1,13 @@
-# Extra characters appearing on cards
+# カードに余分な文字が表示される
 
-Sometimes users notice that text is appearing in front of or on their cards that they don't remember putting there. Usually it is just a couple of letters or nonsense. For instance, on the front side of your card you have written ```book```, but when you review the card it appears as ```fybook```.
+時々、ユーザーはカードの前面や上に自分が記憶していないテキストが表示されることに気づくことがあります。通常、それは数文字の文字や意味のないものです。例えば、カードの表側に「book」と書いたのに、カードをレビューすると「fybook」と表示される場合があります。
 
-This problem is caused by accidentally placing text in the card template. You can solve it as follows:
+この問題は、カードテンプレートに誤ってテキストを配置したことが原因です。以下の手順で解決できます：
 
-1. While reviewing with the computer version, locate one of the cards that has the problem, and edit it. (Alternatively, search for one in the browser.)
-2. Click the Cards button.
-3. Look in the Front Template box (or, if the text is appearing on the back of the card, the Back Template box). You should see the extra text in there somewhere. Being careful not to delete anything else, remove it.
+1. コンピュータ版でレビュー中に、問題のあるカードを見つけて編集します。（または、ブラウザで検索します。）
+2. 「カード」ボタンをクリックします。
+3. 「表テンプレート」ボックス（または、テキストがカードの裏側に表示されている場合は「裏テンプレート」ボックス）を確認します。そこに余分なテキストが表示されているはずです。他のものを削除しないように注意しながら、それを削除します。
 
-After you close the Cards dialog, your cards should appear as normal again.
+カードダイアログを閉じると、カードは再び正常に表示されるはずです。
 
-If you don't have access to the computer version, you can study such a card in AnkiMobile, then tap on Tools>More>Edit Card Template.
+コンピュータ版にアクセスできない場合は、AnkiMobileでそのようなカードを学習し、「ツール > その他 > カードテンプレートの編集」をタップしてください。

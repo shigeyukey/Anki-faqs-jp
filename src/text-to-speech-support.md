@@ -1,28 +1,28 @@
-# Text to speech support
+# テキスト読み上げサポート
 
-<h1>For Anki 2.1.20+</h1>
+<h1>Anki 2.1.20以降の場合</h1>
 
-Please see <https://docs.ankiweb.net/templates/fields.html#text-to-speech-for-individual-fields>
+<https://shigeyukey.github.io/anki-manual-jp/templates/fields.html#個別フィールドのテキスト読み上げ> をご覧ください。
 
-<h1>For AnkiMobile 2.0.56+</h1>
+<h1>AnkiMobile 2.0.56以降の場合</h1>
 
-Please see <https://docs.ankimobile.net/tts.html>
+<https://docs.ankimobile.net/tts.html> をご覧ください。
 
-<h1>For AnkiDroid</h1>
+<h1>AnkiDroidの場合</h1>
 
-Please search for TTS in the AnkiDroid manual.
+AnkiDroidマニュアルでTTSを検索してください。
 
-<h1>For older Anki versions</h1>
+<h1>古いAnkiバージョンの場合</h1>
 
-There is a popular add-on called AwesomeTTS that supports a number of text to speech programs and services. You can read more about it here:
+AwesomeTTSという人気のアドオンがあり、多くのテキスト読み上げプログラムやサービスをサポートしています。詳細はこちらをご覧ください：
 
 <https://ankiweb.net/shared/info/814349176>
 
-It works by downloading the audio into your collection, so that when you sync with AnkiWeb, your other devices will gain access to the audio as well.
+このアドオンはオーディオをコレクションにダウンロードすることで機能します。したがって、AnkiWebと同期すると、他のデバイスでもオーディオにアクセスできるようになります。
 
-If you want to use the generated files outside the computer version, make sure you use the stored files mode and not 'on the fly'.
+生成されたファイルをコンピュータ版以外で使用したい場合は、「オンザフライ」ではなく「保存されたファイル」モードを使用してください。
 
-While AnkiMobile <2.0.56 has no official support for on-device TTS, Apple introduced TTS support in iOS7, and it is possible to gain access to it. The following is based on a user-contributed solution.
+AnkiMobile <2.0.56 にはデバイス上でのTTSの公式サポートはありませんが、AppleはiOS7でTTSサポートを導入しており、アクセスすることが可能です。以下はユーザーが提供したソリューションに基づいています。
 
 ```html
 <span id="word">{{Word}}</span>
@@ -46,6 +46,6 @@ While AnkiMobile <2.0.56 has no official support for on-device TTS, Apple introd
 </script>
 ```
 
-You can change en-GB to other languages like en-US, de-DE, ja-JP, zh-HK, etc. You can use the example section on the following page to see all the different languages. <https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/getVoices>
+`en-GB`を`en-US`、`de-DE`、`ja-JP`、`zh-HK`などの他の言語に変更できます。以下のページの例のセクションを使用して、すべての異なる言語を確認できます。<https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/getVoices>
 
-You may need to install the Enhanced audio files for the language you want to play, which you can do so via the Settings app, then General, Accessibility, Speech and Voices.
+再生したい言語の拡張オーディオファイルをインストールする必要があるかもしれません。これは、設定アプリの「一般」、「アクセシビリティ」、「スピーチ」と「声」から行うことができます。

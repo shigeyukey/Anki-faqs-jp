@@ -1,53 +1,23 @@
-# Due times after a break
+# 休憩後の予定時間
 
-When you use Anki every day, each time a card is answered correctly, it
-gets a bigger interval. Let’s assume that 'good' about doubles the
-interval. Thus you have a 5 day wait, then a 10 day wait, 20 days, 40
-days, and so on.
+Ankiを毎日使用していると、カードが正しく回答されるたびに間隔が長くなります。例えば、「良い」を選択すると、間隔が約2倍になります。したがって、5日待ち、次に10日待ち、20日、40日と続きます。
 
-When people return to their deck after weeks or months of no study,
-they’re often surprised by the length intervals have grown to. This is
-because Anki considers the actual time the card was unseen, not just the
-time it was scheduled for. Thus if the card was scheduled for 5 days but
-you didn’t study for a month, the next interval will be closer to 60
-days than 10 days.
+数週間または数ヶ月間学習を中断した後にデッキに戻ると、間隔が非常に長くなっていることに驚くことがあります。これは、Ankiがカードが実際に見られなかった時間を考慮し、予定されていた時間だけを考慮しないためです。したがって、カードが5日後に予定されていたが、1ヶ月間学習しなかった場合、次の間隔は10日よりも60日に近くなります。
 
-This is a good thing. If you have successfully remembered a card after a
-one month wait, chances are you’ll remember it again after a longer
-wait, too. The same principles which make SRS effective in normal use
-apply when you’re studying after a delay, too. It also makes little
-sense to schedule a card for 10 days in the future if you were able to
-easily answer it after a whole month’s wait - you’d be going backwards.
+これは良いことです。1ヶ月待った後にカードを覚えていた場合、さらに長い間隔でも覚えている可能性が高いです。通常の使用でSRS（間隔反復システム）が効果的であるのと同じ原理が、遅延後の学習にも適用されます。また、1ヶ月待った後に簡単に答えられたカードを10日後に予定するのは意味がありません。逆戻りしてしまいます。
 
-Resetting the deck is an even worse solution. When returning to a deck
-after a long absence, you may have forgotten many of your cards, but
-chances are you haven’t forgotten them all. Resetting the entire deck
-means you have to waste time studying material you already know.
+デッキをリセットするのはさらに悪い解決策です。長期間の不在後にデッキに戻ると、多くのカードを忘れているかもしれませんが、すべてを忘れているわけではありません。デッキ全体をリセットすると、すでに知っている内容を学習するために時間を無駄にすることになります。
 
-Now you may find overdue cards that you were able to recall, but not
-comfortably, since they were not reviewed when they should have been. To
-counter this, Anki treats the delay differently depending on your
-answer. If you find a card easy, the last interval plus the full delay
-are added together, and then used to calculate the next interval. When
-you answer good, only half the delay is used. And when you answer hard,
-none of the extra delay is used. So if a card was due in 5 days, and it’s
-answered 20 days late, the next times you’d end up with are
-approximately:
+今、予定より遅れているカードがあり、それを思い出すことができたが、予定通りに復習されなかったために快適ではなかった場合があります。これに対処するために、Ankiはあなたの回答に応じて遅延を異なる方法で処理します。カードが簡単だと感じた場合、最後の間隔と完全な遅延が合計され、次の間隔を計算するために使用されます。「良い」と答えた場合、遅延の半分だけが使用されます。「難しい」と答えた場合、追加の遅延は使用されません。したがって、カードが5日後に予定されていて、20日遅れて回答された場合、次の予定時間はおおよそ次のようになります：
 
-- Hard: 5 \* 1.2 = 6 days
+- 難しい: 5 \* 1.2 = 6日
 
-- Good: (5 + 20/2) \* 2.5 = 37.5 days
+- 良い: (5 + 20/2) \* 2.5 = 37.5日
 
-- Easy: (5 + 20) \* 3.25 = 81.25 days
+- 簡単: (5 + 20) \* 3.25 = 81.25日
 
-The exact numbers will depend on your past performance with the card,
-and your deck settings.
+正確な数値は、過去のカードのパフォーマンスやデッキの設定によって異なります。
 
-If you find a card hard, the next interval is conservative and any extra delay
-is discarded. If you find it good, the next interval is only about 50% higher.
-And easy increases the interval aggressively as usual.
+カードが難しいと感じた場合、次の間隔は控えめで、追加の遅延は無視されます。カードが良いと感じた場合、次の間隔は約50%だけ長くなります。簡単だと感じた場合、通常通り積極的に間隔が延長されます。
 
-So it is recommended that you study as normal when you return to Anki
-after a period of absence. But if you absolutely must reset the deck,
-you can select the cards to reset in the browser, and use
-Cards&gt;Forget.
+したがって、Ankiにしばらく戻ってきたときは、通常通りに学習することをお勧めします。しかし、どうしてもデッキをリセットする必要がある場合は、ブラウザでリセットするカードを選択し、カード > 忘れる を使用できます。

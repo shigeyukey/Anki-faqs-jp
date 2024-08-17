@@ -1,13 +1,13 @@
-# Changing the font
+# フォントの変更
 
 <h2>Anki</h2>
 
-- To change the font when reviewing, please see [here](https://docs.ankiweb.net/templates/styling.html).
-- To change the font you see when adding or editing, please click the Fields button.
-- To change the font in rows of cards in the browser, please click the Cards button, and then More, and then Browser Appearance.
-- For buttons, menus and so on, Anki uses your system font settings, so you can alter the size by adjusting the system font scale. If you wish to override the font only in Anki, you'll need to install <https://ankiweb.net/shared/info/2103013902> and then alter the fontHeight line, changing f.pixelSize() to a number like 16.
+- レビュー時のフォントを変更するには、[こちら](https://shigeyukey.github.io/anki-manual-jp/templates/styling.html)をご覧ください。
+- 追加や編集時のフォントを変更するには、フィールドボタンをクリックしてください。
+- ブラウザのカード行のフォントを変更するには、カードボタンをクリックし、次に「その他」、そして「ブラウザの外観」を選択してください。
+- ボタンやメニューなどのフォントはシステムフォント設定を使用しているため、システムフォントのスケールを調整することでサイズを変更できます。Anki内のフォントのみを上書きしたい場合は、<https://ankiweb.net/shared/info/2103013902> をインストールし、fontHeight行を変更して、f.pixelSize()を16などの数値に変更してください。
 
 <h2>AnkiMobile</h2>
 
-- Any changes you make to your card templates will be reflected when studying in AnkiMobile
-- You can also tap on Tools while reviewing to adjust the font scaling relative to the computer version
+- カードテンプレートに加えた変更は、AnkiMobileでの学習時に反映されます。
+- レビュー中にツールをタップして、コンピュータ版に対するフォントスケーリングを調整することもできます。

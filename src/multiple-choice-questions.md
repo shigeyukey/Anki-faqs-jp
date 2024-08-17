@@ -1,26 +1,17 @@
-# Multiple choice questions
+# 選択式問題
 
-Multiple choice questions are not the most effective way to study. The reason
-they are commonly used in an academic setting is because they are easy to mark,
-and they allow the person studying to demonstrate their ability to recognize the
-correct answer, even if they can’t produce it themselves.
+選択式問題は、最も効果的な学習方法ではありません。学術環境で一般的に使用される理由は、採点が容易であり、学習者が自分で答えを生成できなくても正しい答えを認識する能力を示すことができるからです。
 
-When you need to pick from a selection of answers, it is easy to "cheat", as you
-can guess what the correct answer is if you know what the other displayed options
-are. When multiple choice tests are designed by humans, the test creator can create
-clever "distractors" that are similar to the correct answer, making it harder for
-you to guess. Computers are not so good at this.
+選択肢から答えを選ぶ必要がある場合、他の表示された選択肢が何であるかを知っていれば、正しい答えを推測することができるため、「カンニング」しやすくなります。選択式テストが人間によって設計される場合、テスト作成者は正しい答えに似た巧妙な「ダミー」を作成し、推測を難しくすることができます。コンピュータはこれがあまり得意ではありません。
 
-If you are studying for a test and you have a sample test with a
-multiple choice questions, like the following:
+テストの勉強をしていて、次のような選択式問題のサンプルテストがある場合：
 
-    Q: What animal has a really long neck?
+    Q: 首がとても長い動物は何ですか？
 
-    A: 1. A monkey. 2. A giraffe. 3. A donkey. 4. A snail.
+    A: 1. サル 2. キリン 3. ロバ 4. カタツムリ
 
-Then the recommended way to put that question into Anki is to drop the incorrect
-answers, turning it into a simple question/answer card instead:
+この質問をAnkiに入力する推奨方法は、誤った選択肢を削除し、単純な質問/回答カードに変えることです：
 
-    Q: What animal has a really long neck?
+    Q: 首がとても長い動物は何ですか？
 
-    A: A giraffe.
+    A: キリン

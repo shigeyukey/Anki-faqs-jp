@@ -1,14 +1,13 @@
-# Anki knockoffs
+# Ankiの模倣品
 
-AnkiApp and Anki Pro were developed by separate groups of people, and they are not related to the rest of the Anki ecosystem. They were released years after Anki was already established in the marketplace, and we suspect the names were deliberately chosen to take advantage of the brand recognition we have built up. Using Anki in the name implies that they will function with the other Anki clients, which they do not.
+AnkiAppとAnki Proは別々のグループによって開発されており、他のAnkiエコシステムとは関係ありません。これらはAnkiが市場に確立された後にリリースされ、名前が意図的に選ばれて私たちが築き上げたブランド認知を利用しようとしていると考えています。名前にAnkiを使用することで、他のAnkiクライアントと連携するかのような印象を与えますが、実際にはそうではありません。
 
-If you have downloaded AnkiApp or Anki Pro in error, please consider leaving a review on the app store alerting people to the fact that they are not the real Anki.
+誤ってAnkiAppやAnki Proをダウンロードしてしまった場合は、アプリストアでレビューを残し、それらが本物のAnkiではないことを知らせることを検討してください。
 
-If you purchased a subscription from them, you could try contacting Apple to see if they can refund your money.
+もしこれらのアプリからサブスクリプションを購入した場合は、Appleに連絡して返金が可能かどうか確認してみてください。
 
-The Anki ecosystem is made up of Anki, AnkiMobile, AnkiDroid, and AnkiWeb, all of which are linked from our official website: <https://apps.ankiweb.net>
+Ankiエコシステムは、Anki、AnkiMobile、AnkiDroid、AnkiWebで構成されており、すべて公式ウェブサイト（<https://apps.ankiweb.net>）からリンクされています。
 
-**Importing from AnkiApp/Anki Pro**
+**AnkiApp/Anki Proからのインポート**
 
-Abdo has kindly published [an add-on](https://ankiweb.net/shared/info/2072125761
-) to help you import your AnkiApp and Anki Pro decks into Anki. 
+Abdoが親切にも、AnkiAppとAnki ProのデッキをAnkiにインポートするのを助ける[アドオン](https://ankiweb.net/shared/info/2072125761)を公開しています。

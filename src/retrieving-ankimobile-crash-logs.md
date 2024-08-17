@@ -1,10 +1,10 @@
-# Retrieving AnkiMobile crash logs
+# AnkiMobileのクラッシュログの取得
 
-Crash logs help us identify what's going wrong when AnkiMobile crashes. To share your crash logs, please:
+クラッシュログは、AnkiMobileがクラッシュしたときに何が問題なのかを特定するのに役立ちます。クラッシュログを共有するには、以下の手順に従ってください：
 
-- Go to the Settings app on the home screen, and tap on 'Privacy'
-- Then tap on 'Analytics Data'
-- Scroll down until you find 'anki' - there should be a report for each crash.
-- Tap on the latest 'anki' one.
-- Tap the share icon and mail the report to yourself
-- Grab the file from your email, and attach it to a support ticket here
+- ホーム画面の設定アプリに移動し、「プライバシー」をタップします
+- 次に「解析データ」をタップします
+- 下にスクロールして「anki」を見つけます。クラッシュごとにレポートがあるはずです。
+- 最新の「anki」をタップします
+- 共有アイコンをタップして、レポートを自分にメールで送信します
+- メールからファイルを取得し、サポートチケットに添付します

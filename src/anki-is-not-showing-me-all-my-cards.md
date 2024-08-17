@@ -1,37 +1,37 @@
-# Anki's not showing me all my cards!
+# Ankiがすべてのカードを表示しない！
 
-<h2>Anki decides which cards you see</h2>
+<h2>Ankiが表示するカードを決定します</h2>
 
-Anki was designed to help you remember large amounts of material for a long time. To do this, it operates differently to a traditional flashcard program.
+Ankiは大量の資料を長期間覚えるのを助けるために設計されています。これを実現するために、従来のフラッシュカードプログラムとは異なる動作をします。
 
-In a conventional flashcard program, you see the same set of cards over and over again, and decide when you want to stop. Repeatedly reviewing material in this way - "cramming" - tends to be what we're used to, and for many people it feels like the natural way to study.
+従来のフラッシュカードプログラムでは、同じセットのカードを何度も繰り返し表示し、いつやめるかを自分で決めます。このように資料を繰り返し復習すること - 「詰め込み」 - は私たちが慣れている方法であり、多くの人にとっては自然な学習方法のように感じられます。
 
-There's just one problem with this approach - it's not terribly effective! Studies have shown that you can achieve better results by adding a delay between each review of an item, instead of reviewing it multiple times in a short period. This delay between reviews is called "spaced repetition".
+しかし、このアプローチには一つの問題があります - あまり効果的ではないのです！研究によると、短期間に何度も復習するのではなく、各復習の間に遅延を加えることで、より良い結果を得ることができることが示されています。この復習の間の遅延を「間隔反復」と呼びます。
 
-In Anki, instead of going over material until you decide to stop, Anki chooses which cards you need to see. If you press the Again button on a card because you've forgotten it, it will be shown again soon. Once you've remembered the card correctly for 10 minutes, Anki will not show the card again until the next day - and if you answer it correctly then, the delay will grow larger each time.
+Ankiでは、あなたがやめるまで資料を繰り返すのではなく、Ankiが表示する必要のあるカードを選びます。カードを忘れたために「もう一度」ボタンを押すと、そのカードはすぐに再表示されます。一度カードを正しく覚えたら、Ankiはそのカードを次の日まで表示しません - そしてその時に正しく答えると、遅延は毎回大きくなります。
 
-If you are new to spaced repetition, you may well be skeptical, and you may still feel that cramming would help you more. You are not alone - studies have shown that people tend to assume that cramming will be more effective, even when results show that spaced repetition actually works better. Please keep an open mind, and try it for a few weeks before you decide which approach is best for you.
+間隔反復に慣れていない場合、懐疑的になるかもしれませんし、詰め込みの方が役立つと感じるかもしれません。あなたは一人ではありません - 研究によると、人々は詰め込みの方が効果的だと考える傾向がありますが、結果は間隔反復の方が実際に効果的であることを示しています。心を開いて、どちらのアプローチが自分に最適かを決める前に、数週間試してみてください。
 
-If you have a test due in a few days, it's probably not the best time to be starting with Anki. While Anki does have tools to bypass the regular scheduling for things like upcoming tests, they take some time to learn how to use, and they are awkward to use on a daily basis. If you have an imminent test, you may want to consider studying as you have done previously, and then picking Anki back up when you're not under as much pressure.
+数日後にテストがある場合、Ankiを始めるのは最適な時期ではないかもしれません。Ankiには、今後のテストのようなもののために通常のスケジューリングをバイパスするツールがありますが、それらを使いこなすには時間がかかり、日常的に使うのは面倒です。差し迫ったテストがある場合、以前のように勉強することを検討し、その後、プレッシャーが少ない時にAnkiを再開することをお勧めします。
 
-<h2>New cards</h2>
+<h2>新しいカード</h2>
 
-By default, Anki will show you a maximum of 20 new cards each day. The reason for this limit is because those cards will need to be reviewed in the coming days - such as the next day, and then a few days after, and so on. Each day you use Anki, another 20 cards will be introduced, and the reviews will start to add up - if you're adding 20 new cards each day, you can expect the daily reviews in the early stages to build up to around 200 cards/day.
+デフォルトでは、Ankiは毎日最大20枚の新しいカードを表示します。この制限の理由は、これらのカードは今後数日間にわたって復習する必要があるためです - 例えば、翌日や数日後などです。Ankiを毎日使用することで、さらに20枚のカードが追加され、復習が増えていきます - 毎日20枚の新しいカードを追加している場合、初期段階では1日あたり約200枚のカードを復習することになります。
 
-It is possible to increase the number of new cards that are presented each day by adjusting the deck options or using the custom study feature, but please be careful - if you try to learn too many new cards at once, you'll find the follow-up reviews overwhelming, and you'll end up forgetting the material again. While you're no doubt eager to get stuck into your material, it's a good idea to try Anki with the default options for a week or two before you think about changing the limits.
+デッキオプションを調整したり、カスタム学習機能を使用したりすることで、毎日表示される新しいカードの数を増やすことは可能ですが、注意が必要です - 一度に多くの新しいカードを学ぼうとすると、後の復習が圧倒的になり、再び資料を忘れてしまうことになります。あなたが間違いなく資料に取り組むことに熱心である一方で、制限を変更する前に、デフォルトのオプションで1〜2週間Ankiを試してみることをお勧めします。
 
-<h2>Reviews</h2>
+<h2>復習</h2>
 
-Anki will show cards you've previously reviewed when it thinks you will forget them. The delays will start from a single day, but can grow into months or years if you repeatedly answer a card correctly.
+Ankiは、忘れそうなタイミングで以前に復習したカードを表示します。遅延は1日から始まり、カードに正しく答え続けると数ヶ月や数年に延びることがあります。
 
-Unless you have a test coming up soon, it's best to review cards as Anki schedules them. Try to resist the urge to review material multiple times to reinforce it - it is more efficient to just wait a while than to view the same content over and over again. If you do find yourself with free time, consider adding some more new cards to Anki instead, or doing some other studies.
+すぐにテストがない限り、Ankiがスケジュールした通りにカードを復習するのが最善です。資料を強化するために何度も復習する衝動を抑えるようにしましょう。同じ内容を何度も見るよりも、少し待つ方が効率的です。もし自由な時間がある場合は、新しいカードをAnkiに追加するか、他の勉強をすることを検討してください。
 
-If you have a test coming up and need to review the material before it is due, you can tell Anki you'd like to [review outside of the regular schedule](https://docs.ankiweb.net/filtered-decks.html). If you just want to quickly flip through some cards to check for mistakes after creating them or get a general idea of what's there, you can use the **Preview** button in the upper-right corner of the Browse screen.
+テストが近づいていて、予定より早く資料を復習する必要がある場合は、Ankiに[通常のスケジュール外で復習したい](https://shigeyukey.github.io/anki-manual-jp/filtered-decks.html)ことを伝えることができます。カードを作成した後に間違いがないか素早く確認したり、内容をざっと把握したい場合は、ブラウズ画面の右上にある**プレビュー**ボタンを使用できます。
 
-<h2>Card counts dropping down by more than one</h2>
+<h2>カード数が一度に複数減少する</h2>
 
-If you're seeing the card count drop down by more than one after certain operations like an undo, please see <https://anki.tenderapp.com/kb/problems/i-created-reversed-cards-but-theyre-not-showing-up>.
+元に戻すなどの操作の後にカード数が一度に複数減少する場合は、<https://anki.tenderapp.com/kb/problems/i-created-reversed-cards-but-theyre-not-showing-up>をご覧ください。
 
-<h2>Related</h2>
+<h2>関連</h2>
 
-[Settings for using Anki to prepare for a large exam](https://faqs.ankiweb.net/settings-for-using-anki-to-prepare-for-a-large-exam.html)
+[大規模な試験の準備にAnkiを使用するための設定](https://shigeyukey.github.io/Anki-faqs-jp/settings-for-using-anki-to-prepare-for-a-large-exam.html)

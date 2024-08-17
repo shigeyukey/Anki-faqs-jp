@@ -1,17 +1,7 @@
-# Emails not being received due to "spam"
+# 「スパム」によるメールが受信されない
 
-Some email providers (typically school or business email) outsource spam
-checking to external companies. Some of these external companies can be
-heavy-handed when fighting spam, and collateral damage unfortunately happens -
-innocent parties such as AnkiWeb can end up getting blocked when a different
-customer on the same network has sent inappropriate mail.
+一部のメールプロバイダー（通常は学校や企業のメール）は、スパムチェックを外部の会社に委託しています。これらの外部会社の中には、スパム対策において厳格すぎるところがあり、無関係な被害が発生することがあります。同じネットワーク上の他の顧客が不適切なメールを送信した場合、無実のAnkiWebのメールがブロックされることがあります。
 
-If you have access to an email address at another provider, the fastest solution
-is to use the Account tab of AnkiWeb to change to your other email address.
+他のプロバイダーのメールアドレスにアクセスできる場合、最も迅速な解決策は、AnkiWebのアカウントタブを使用して別のメールアドレスに変更することです。
 
-If you do not have access to another email address, you could try asking your
-email provider to remove 23.249.217.77 from the block list they are using. It is
-a dedicated IP used only by AnkiWeb, hosted in Amazon's network. If your email
-provider are not able to fix the problem for you, please sign up for a free
-email address at somewhere like gmail.com instead, as they reliably accept the
-email we send.
+他のメールアドレスにアクセスできない場合、メールプロバイダーに23.249.217.77を使用しているブロックリストから削除するよう依頼することができます。これは、AmazonのネットワークにホストされているAnkiWeb専用のIPアドレスです。メールプロバイダーが問題を解決できない場合は、gmail.comなどで無料のメールアドレスを取得してください。これらのプロバイダーは、私たちが送信するメールを確実に受信します。

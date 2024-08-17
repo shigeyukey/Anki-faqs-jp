@@ -1,15 +1,15 @@
-# How can I work with someone else to create a deck?
+# 他の人と一緒にデッキを作成するにはどうすればよいですか？
 
-Anki's collaboration support is limited at the moment, but it is possible for multiple people to work on content together.
+現在、Ankiのコラボレーションサポートは限られていますが、複数の人が一緒にコンテンツを作成することは可能です。
 
-If you are creating cards that have no sounds or images, then the easiest option may be to take advantage of an online document collaboration service such as Google Drive.
+音声や画像を含まないカードを作成している場合、最も簡単な方法はGoogleドライブなどのオンラインドキュメントコラボレーションサービスを利用することです。
 
-With this system, you create your cards in a spreadsheet (one column per field in the note type you're using). To allow updating easily, the first column should be one that you do not expect to change if you update the cards. You can add and edit cards together at whatever time you want; when you're ready to update your collection with new and updated cards, each user can export the spreadsheet to a text file and [import it into Anki](https://docs.ankiweb.net/importing/intro.html).
+このシステムでは、スプレッドシートにカードを作成します（使用しているノートタイプの各フィールドごとに1列）。簡単に更新できるように、最初の列はカードを更新する際に変更されない列にする必要があります。いつでもカードを追加および編集できます。新しいカードや更新されたカードをコレクションに追加する準備ができたら、各ユーザーはスプレッドシートをテキストファイルにエクスポートし、それを[Ankiにインポート](https://shigeyukey.github.io/anki-manual-jp/importing/intro.html)します。
 
-If you are creating cards that contain images or sounds, it gets more complicated. You can use the above approach, but it means you'll need to distribute the media files separately. Instead, we recommend taking turns to create the content. For example, if students are collaborating on a class, student A creates a deck "lesson 1" and puts all the first lesson content in it, then student B creates "lesson 2", and so on. As each lesson is done, the student exports the deck to an apkg file, and uploads/emails/etc it, and the other people import it.
+画像や音声を含むカードを作成している場合は、もう少し複雑になります。上記の方法を使用することもできますが、メディアファイルを別々に配布する必要があります。代わりに、コンテンツを作成する順番を決めることをお勧めします。例えば、学生がクラスで協力している場合、学生Aが「レッスン1」のデッキを作成し、最初のレッスンの内容をすべて入れます。その後、学生Bが「レッスン2」を作成し、同様に進めます。各レッスンが完了したら、学生はデッキをapkgファイルにエクスポートし、それをアップロード/メール送信などして、他の人がそれをインポートします。
 
-Using a separate deck for each unit of work makes it easier to export the content separately, instead of sharing everything that's been created so far (which would lead to large files). After other users import the content, they can move it to another deck if they wish, using the computer version.
+作業単位ごとに別々のデッキを使用すると、これまでに作成されたすべてのコンテンツを共有するのではなく、コンテンツを個別にエクスポートするのが簡単になります（これにより、大きなファイルになるのを防ぎます）。他のユーザーがコンテンツをインポートした後、コンピュータ版を使用して別のデッキに移動することができます。
 
-Advanced users can skip the separate deck step by instead creating a filtered deck using something like 'added:7' to only include cards added in the last 7 days, and then exporting that filtered deck to share.
+上級ユーザーは、別々のデッキステップをスキップし、代わりに「added:7」のようなフィルタを使用して、過去7日間に追加されたカードのみを含むフィルタデッキを作成し、そのフィルタデッキをエクスポートして共有することができます。
 
-There are also add-ons available that support collaboration, such as [AnkiHub](https://www.ankihub.net) or [AnkiCollab](https://www.ankicollab.com/). Additional add-ons offering similar functionality can be found on the [shared add-ons page](https://ankiweb.net/shared/addons).
+コラボレーションをサポートするアドオンも利用できます。例えば、[AnkiHub](https://www.ankihub.net) や [AnkiCollab](https://www.ankicollab.com) などです。類似の機能を提供する追加のアドオンは、[共有アドオンページ](https://ankiweb.net/shared/addons) で見つけることができます。

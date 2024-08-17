@@ -1,8 +1,3 @@
-# My antivirus program says Anki is infected!
+# 私のウイルス対策プログラムがAnkiに感染していると言っています！
 
-Antivirus programs sometimes get things wrong. This is especially so when we
-release a new version - some AV programs assume that because the new version has
-not been seen in the past that it must be dangerous. We are careful about
-security, and the chances of a virus making it into an Anki release are very
-slim. If you've received a message from your antivirus, please contact your AV
-vendor to let them know about the false positive.
+ウイルス対策プログラムは時々誤検出をします。特に新しいバージョンをリリースしたときにこの傾向があります。いくつかのウイルス対策プログラムは、新しいバージョンが過去に見られたことがないため危険だと仮定します。私たちはセキュリティに注意を払っており、ウイルスがAnkiのリリースに入り込む可能性は非常に低いです。ウイルス対策プログラムからメッセージを受け取った場合は、誤検出についてウイルス対策ベンダーに連絡してください。

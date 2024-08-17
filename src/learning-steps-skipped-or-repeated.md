@@ -1,7 +1,5 @@
-# Learning steps are skipped or repeated
+# 学習ステップがスキップまたは繰り返される
 
-If you change the learning steps while cards are already in learning, you may find
-the cards skip or repeat steps until you mark them Again or they graduate the learning
-queue.
+カードがすでに学習中に学習ステップを変更すると、カードがステップをスキップしたり繰り返したりすることがあります。これは、カードを「再学習」または「卒業」させるまで続きます。
 
-This issue no longer exists if you change the learning steps in Anki 2.1.55+.
+この問題は、Anki 2.1.55以降では発生しません。

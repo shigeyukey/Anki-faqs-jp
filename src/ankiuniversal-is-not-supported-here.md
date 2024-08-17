@@ -1,7 +1,7 @@
-# AnkiUniversal is not supported here
+# AnkiUniversalはここではサポートされていません
 
-AnkiUniversal is by a separate group of developers and is not fully compatible with the rest of the Anki ecosystem - it does not support things like syncing of media, creating LaTeX images, and so on.
+AnkiUniversalは別の開発者グループによって開発されており、Ankiエコシステムの他の部分と完全には互換性がありません。例えば、メディアの同期やLaTeX画像の作成などをサポートしていません。
 
-You may wish to consider using the official Anki version from <https://apps.ankiweb.net> instead.
+代わりに、公式のAnkiバージョンを使用することを検討してください：<https://apps.ankiweb.net>
 
-If you wish to continue using AnkiUniversal, please direct any questions you have to the AnkiUniversal authors: ankiuniversal@gmail.com
+AnkiUniversalの使用を続けたい場合は、質問をAnkiUniversalの作者に直接お問い合わせください：ankiuniversal@gmail.com

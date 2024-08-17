@@ -1,5 +1,5 @@
-# AnkiDroid has a separate support site
+# AnkiDroidには別のサポートサイトがあります
 
-AnkiDroid is developed by a separate group of people, and has its own support site. Please see this page:
+AnkiDroidは別のグループによって開発されており、独自のサポートサイトがあります。こちらのページをご覧ください：
 
 <https://ankidroid.org/docs/help.html>

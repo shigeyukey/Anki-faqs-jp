@@ -1,5 +1,5 @@
-# Printing cards in your collection
+# コレクション内のカードを印刷する
 
-Some people like to print the cards in their collection so that they can review them on paper or for other reasons. Before you do this, please keep in mind that Anki is most effective when you study only through the application. Studying a list of your cards will necessarily require you to study them at suboptimal intervals compared to the ones Anki gives you.
+一部の人々は、コレクション内のカードを印刷して紙で復習したり、他の理由で使用したりすることを好みます。これを行う前に、Ankiはアプリケーションを通じてのみ学習することで最も効果的であることを覚えておいてください。カードのリストを学習することは、Ankiが提供する最適な間隔に比べて、必然的に非最適な間隔で学習することになります。
 
-Printing in Anki is handled by the [Basic Printing Support](https://ankiweb.net/shared/info/1025789669) add-on. If you have trouble getting your browser to open, please follow the directions in the review "WORKS, but does not open the browser automatically", located on that page.
+Ankiでの印刷は、[Basic Printing Support](https://ankiweb.net/shared/info/1025789669) アドオンによって処理されます。ブラウザが開かない場合は、そのページにある「WORKS, but does not open the browser automatically」というレビューに記載されている指示に従ってください。

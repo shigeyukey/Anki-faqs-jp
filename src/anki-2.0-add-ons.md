@@ -1,22 +1,22 @@
-# Anki 2.0 add-ons
+# Anki 2.0 アドオン
 
-**Due to the libraries Anki 2.0 uses no longer being supported, [Anki 2.0 has been discontinued](https://faqs.ankiweb.net/anki-2.0-support-has-ended.html), and may stop working in a future OS update. Please consider updating to Anki 2.1 instead.**
+**Anki 2.0 が使用しているライブラリがサポートされなくなったため、[Anki 2.0 のサポートは終了しました](https://shigeyukey.github.io/Anki-faqs-jp/anki-2.0-support-has-ended.html)。将来のOSアップデートで動作しなくなる可能性があります。Anki 2.1 へのアップデートを検討してください。**
 
-If the add-on you want has a 2.0 download link on AnkiWeb, you can download the add-on's .py or .zip file.
+AnkiWebに2.0のダウンロードリンクがあるアドオンを使用したい場合は、アドオンの .py または .zip ファイルをダウンロードできます。
 
-- If it's a .py file, place it in your add-on folder.
-- If it's a .zip file, unzip the contents into your add-on folder.
+- .py ファイルの場合は、アドオンフォルダに配置します。
+- .zip ファイルの場合は、内容をアドオンフォルダに解凍します。
 
-Your add-on folder is inside your data folder: <https://docs.ankiweb.net/files.html#file-locations>
+アドオンフォルダはデータフォルダ内にあります: <https://shigeyukey.github.io/anki-manual-jp/files.html#ファイルの場所>
 
-An archive of the old 2.0 add-ons has also been made available. To use it:
+古い2.0アドオンのアーカイブも利用可能です。使用するには:
 
-- Download the add-on archive from <https://apps.ankiweb.net/downloads/archive/addons-2.0.zip>
-- Extract the zip.
-- Search through the README file to locate the add-on ID you want.
-- If it's a .py file, place it in your add-on folder.
-- If it's a .zip file, unzip the contents into your add-on folder.
+- <https://apps.ankiweb.net/downloads/archive/addons-2.0.zip> からアドオンアーカイブをダウンロードします。
+- zipファイルを解凍します。
+- READMEファイルを検索して、目的のアドオンIDを見つけます。
+- .py ファイルの場合は、アドオンフォルダに配置します。
+- .zip ファイルの場合は、内容をアドオンフォルダに解凍します。
 
-Your add-on folder is inside your data folder: <https://docs.ankiweb.net/files.html#file-locations>
+アドオンフォルダはデータフォルダ内にあります: <https://shigeyukey.github.io/anki-manual-jp/files.html#ファイルの場所>
 
-**These add-ons are provided as-is, and no support can be provided for them.**
+**これらのアドオンは現状のまま提供されており、サポートは提供されません。**

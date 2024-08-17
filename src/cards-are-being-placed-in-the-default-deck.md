@@ -1,3 +1,3 @@
-# Cards are being placed in the "Default" deck
+# カードが「デフォルト」デッキに配置される
 
-This is usually caused by an AnkiDroid bug, but can happen for other reasons as well. To fix the problem, please click the Cards button while adding a card, select the card type you're having trouble with via the tabs at the top, and ensure Options>Deck Override (More>Deck Override on Anki 2.0) is turned off.
+これは通常、AnkiDroidのバグによって引き起こされますが、他の理由でも発生することがあります。問題を修正するには、カードを追加する際に「カード」ボタンをクリックし、上部のタブから問題のあるカードタイプを選択し、「オプション > デッキの上書き」（Anki 2.0では「その他 > デッキの上書き」）がオフになっていることを確認してください。

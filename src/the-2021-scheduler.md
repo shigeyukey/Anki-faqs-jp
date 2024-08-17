@@ -1,180 +1,125 @@
-# 2021 Scheduler
+# 2021年スケジューラ
 
-The 2021 scheduler ("v3") is an update to the [Anki 2.1
-scheduler](./the-anki-2.1-scheduler.md) ("v2").
+2021年スケジューラ（「v3」）は、[Anki 2.1スケジューラ](./the-anki-2.1-scheduler.md)（「v2」）のアップデートです。
 
-## Enabling
+## 有効化
 
-As of Anki/AnkiMobile 23.10, and AnkiDroid 2.17, the v3 scheduler is the default and only option.
+Anki/AnkiMobile 23.10、およびAnkiDroid 2.17以降では、v3スケジューラがデフォルトかつ唯一のオプションです。
 
-On older versions, the scheduler can be changed in the preferences screen.
+古いバージョンでは、設定画面でスケジューラを変更できます。
 
-## Compatibility
+## 互換性
 
-The v2 and v3 schedulers are compatible. You can switch between them without
-a full sync, and it will not cause scheduling issues if you use v3 on one
-device and sync with another device that is using v2.
+v2とv3のスケジューラは互換性があります。完全な同期を行わずに切り替えることができ、1つのデバイスでv3を使用し、v2を使用している別のデバイスと同期してもスケジューリングの問題は発生しません。
 
-Client support:
+クライアントのサポート：
 
 - Anki: 2.1.45+
 - AnkiMobile: 2.0.75+
-- AnkiWeb: yes
+- AnkiWeb: 対応
 - AnkiDroid: 2.17.0+
 
-Because the v3 scheduler uses a different approach to gathering and sorting
-cards, a v2 and v3 client may show a different number of due cards on a given
-day, and may show them in a different order. Please bear this in mind if you're
-using a client that is still only supports v2.
+v3スケジューラはカードの収集と並べ替えに異なるアプローチを使用するため、v2とv3のクライアントでは特定の日に表示される期日カードの数が異なる場合があり、表示順序も異なる場合があります。v2のみをサポートするクライアントを使用している場合は、この点を考慮してください。
 
-## Changes
+## 変更点
 
-### Undo
+### 元に戻す
 
-The v3 scheduler uses Anki's new undo infrastructure - you can answer a card,
-bury a different card, and answer another card, then undo each one in turn if
-you wish. Previous schedulers handled undo separately, so a non-review action
-would clear the review history, and vice versa.
+v3スケジューラはAnkiの新しい元に戻すインフラストラクチャを使用しています。カードに回答し、別のカードを埋め、さらに別のカードに回答し、それぞれを順番に元に戻すことができます。以前のスケジューラでは元に戻すを個別に処理していたため、レビュー以外のアクションを行うとレビュー履歴がクリアされ、その逆も同様でした。
 
-### Daily limits
+### 日次制限
 
-The new count is now capped by the review count by default, so that new card introduction
-is reduced/paused when you have a backlog of reviews. For example, if you have limits of
-200 reviews and 20 new cards, and 190 reviews are due, only 10 new
-cards will be introduced. This prevents the backlog from getting
-worse.
+新しいカウントはデフォルトでレビュー数によって制限されるようになりました。これにより、レビューのバックログがある場合、新しいカードの導入が減少または一時停止されます。例えば、レビューの制限が200、新しいカードの制限が20の場合、190のレビューが期日になると、新しいカードは10枚しか導入されません。これにより、バックログが悪化するのを防ぎます。
 
-If you find this happening, the recommended solution is to increase your review limit, and work through
-the backlog before you add more new cards. If you're sure you want to add more new cards
-even though you have a backlog, you can enable the "new cards ignore review limit" option
-in the deck options.
+このような状況が発生した場合、推奨される解決策はレビューの制限を増やし、バックログを解消してから新しいカードを追加することです。バックログがあるにもかかわらず新しいカードを追加したい場合は、デッキオプションで「新しいカードがレビュー制限を無視する」オプションを有効にすることができます。
 
-Each deck's limit affects the number of cards that will be drawn from that deck
-and its subdecks. Limits are applied from the deck you select, so if you select
-a child deck, its parents' limits will not apply. For example, with the
-following limits:
+各デッキの制限は、そのデッキおよびそのサブデッキから引かれるカードの数に影響します。制限は選択したデッキから適用されるため、子デッキを選択した場合、その親デッキの制限は適用されません。例えば、以下の制限がある場合：
 
-- Parent: 100
-- Parent::Child: 30
-- Parent::Child::Grandchild1: 50
-- Parent::Child::Grandchild2: 5
-- Parent::Child::Grandchild3: 200
+- 親デッキ: 100
+- 親デッキ::子デッキ: 30
+- 親デッキ::子デッキ::孫デッキ1: 50
+- 親デッキ::子デッキ::孫デッキ2: 5
+- 親デッキ::子デッキ::孫デッキ3: 200
 
-Then:
+次に：
 
-- If you click on Grandchild3, you'll get up to 200 cards.
-- If you click on Grandchild2, you'll get up to 5 cards.
-- If you click on Grandchild1, you'll get up to 50 cards.
-- If you click on Child, you'll get up to 30 cards from the Child deck and its
-  subdecks. No more than 5 cards will be taken from Grandchild2.
-- If you click on Parent, you'll get up to 100 cards, with a maximum of 30
-  coming from Child and its subdecks.
+- Grandchild3をクリックすると、最大200枚のカードが表示されます。
+- Grandchild2をクリックすると、最大5枚のカードが表示されます。
+- Grandchild1をクリックすると、最大50枚のカードが表示されます。
+- Childをクリックすると、Childデッキおよびそのサブデッキから最大30枚のカードが表示されます。Grandchild2からは最大5枚のカードしか取られません。
+- Parentをクリックすると、最大100枚のカードが表示され、そのうち最大30枚がChildおよびそのサブデッキから取られます。
 
-In the v3 scheduler in earlier Anki releases, intermediate limits were not
-respected, so when clicking on Parent, the limits of Child did not influence how
-many cards were taken from the grandchildren.
+初期のAnkiリリースのv3スケジューラでは、中間の制限が尊重されなかったため、ParentをクリックしてもChildの制限が孫デッキから取られるカードの数に影響を与えませんでした。
 
-### Sorting
+### 並べ替え
 
-Additional deck options have been added to control the order new cards and
-reviews are presented in. New cards can be mixed from multiple decks, and
-reviews can optionally be ordered by interval or subdeck.
+新しいカードや復習の表示順序を制御するための追加のデッキオプションが追加されました。新しいカードは複数のデッキから混ぜることができ、復習は間隔やサブデッキによって順序付けることができます。
 
-When burying is disabled, it is now possible to control whether siblings are
-shown together or not, by adjusting the display order.
+埋め込みが無効になっている場合、表示順序を調整することで兄弟カードを一緒に表示するかどうかを制御できるようになりました。
 
-The options controlling the mixing of new cards and interday learning cards have
-been moved from the Preferences screen into the deck options. The options will
-be used from the deck you select to study.
+新しいカードと日間学習カードの混合を制御するオプションは、設定画面からデッキオプションに移動されました。これらのオプションは、学習するために選択したデッキから使用されます。
 
-### Burying
+### 埋め込み
 
-When burying is enabled, cards are now excluded from the queues at the start of
-a study session. Previously if you had 10 forward and 10 reverse cards, the
-counts would start at 20 and jump down as you review, but now they'll start directly
-at 10. The actual burying still happens as you review cards.
+埋め込みが有効になっている場合、カードは学習セッションの開始時にキューから除外されます。以前は、10枚の順方向カードと10枚の逆方向カードがある場合、カウントは20から始まり、レビューするにつれて減少していましたが、今では最初から10で始まります。実際の埋め込みはカードをレビューする際に行われます。
 
-Because exclusion is done when you click on a deck, the counts you see on the deck
-list will differ from the ones you see when you click on a deck. The overview screen
-will point out the number of cards that will be buried.
+除外はデッキをクリックしたときに行われるため、デッキリストで表示されるカウントはデッキをクリックしたときに表示されるカウントと異なります。概要画面では埋め込まれるカードの数が表示されます。
 
-Learning cards that cross a day boundary can now be buried like reviews and new
-cards, and there is a new option available that controls whether they should be buried
-or not.
+日をまたぐ学習カードもレビューや新しいカードと同様に埋め込むことができるようになり、それらを埋め込むかどうかを制御する新しいオプションが追加されました。
 
-### Fuzz
+### ファズ
 
-The small random delay added to reviews is now reflected on the answer buttons,
-instead of only being applied when answering.
+レビューに追加される小さなランダム遅延が、回答ボタンに反映されるようになりました。以前は回答時にのみ適用されていました。
 
-The way the delay is calculated has also been improved - cards with intervals under
-a week now receive a more equally-weighted delay, and the delay amount increases more
-smoothly as intervals increase.
+遅延の計算方法も改善されました。1週間未満の間隔のカードにはより均等に重み付けされた遅延が適用され、間隔が増えるにつれて遅延量がよりスムーズに増加します。
 
-### Interday learning
+### 日間学習
 
-Interday (1+ day) learning cards are now subject to the review limit. When
-determining what fits within the limit, Anki fetches interday learning cards
-first, then reviews, and finally new cards.
+日間（1日以上）学習カードは、レビュー制限の対象となります。制限内に収まるものを決定する際、Ankiはまず日間学習カードを取得し、次にレビュー、最後に新しいカードを取得します。
 
-### Filtered decks
+### フィルターデッキ
 
-Filtered decks with rescheduling disabled now show 4 buttons - the provided
-delay applies to the Again button, and Hard/Good will use 1.5x and 2x the
-provided delay. Easy will remove the card.
+再スケジューリングが無効になっているフィルターデッキには、4つのボタンが表示されるようになりました。提供された遅延は「再度」ボタンに適用され、「難しい/良い」は提供された遅延の1.5倍と2倍を使用します。「簡単」はカードを削除します。
 
-## Add-ons and custom scheduling
+## アドオンとカスタムスケジューリング
 
-The new scheduler is a ground-up rewrite, so add-ons that modified the old
-scheduler's card gathering or answering routines will no longer work. It is no
-longer possible to selectively replace parts of the scheduler's code ("monkey
-patching"), so some add-ons may not be practical to port without significant
-effort.
+新しいスケジューラはゼロからの書き直しであるため、旧スケジューラのカード収集や回答ルーチンを変更するアドオンはもう機能しません。スケジューラのコードの一部を選択的に置き換えること（「モンキーパッチ」）はもうできないため、いくつかのアドオンは大幅な努力なしには移植が実用的ではないかもしれません。
 
-The new scheduler does provide some control over the scheduling however. As each
-card is presented, the times and states associated with each answer button are
-calculated in advance, and it is possible to modify the calculated scheduling
-with some JavaScript code entered into the bottom of the deck options screen.
+しかし、新しいスケジューラはスケジューリングに対するいくつかの制御を提供します。各カードが提示されるとき、各回答ボタンに関連する時間と状態が事前に計算され、デッキオプション画面の下部に入力されたJavaScriptコードで計算されたスケジューリングを変更することが可能です。
 
-The code you enter applies to the entire collection, and not just decks using
-the preset.
+入力したコードはプリセットを使用するデッキだけでなく、コレクション全体に適用されます。
 
-Here's an example. Please note that it uses modern JavaScript that will need
-to be transpiled if you want to use it with the Qt5 version of Anki.
+以下は例です。Qt5バージョンのAnkiで使用する場合は、トランスパイルが必要なモダンJavaScriptを使用していることに注意してください。
 
-For example:
+例えば：
 
 ```javascript
-// print the existing states
+// 既存の状態を出力する
 console.log(
   JSON.stringify(states, null, 4)
 );
 
-// load the debugger if the web inspector is open
+// ウェブインスペクターが開いている場合、デバッガーをロードする
 debugger;
 
-// if the hard button is a learning step, make it
-// a 123 minute delay
+// ハードボタンが学習ステップの場合、123分の遅延にする
 if (states.hard.normal?.learning) {
   states.hard.normal.learning.scheduledSecs = 123 * 60;
 }
 
-// apply the same change in a rescheduling filtered deck
+// 再スケジューリングされたフィルターデッキでも同じ変更を適用する
 if (states.hard.filtered?.rescheduling?.originalState?.learning) {
   states.hard.filtered.rescheduling.originalState.learning.scheduledSecs =
     123 * 60;
 }
 
-// increase ease factor by 0.2 when Easy used on a review
+// レビューでイージーボタンを使用したときにイーズファクターを0.2増加させる
 if (states.good.normal?.review) {
   states.easy.normal.review.easeFactor =
     states.good.normal.review.easeFactor + 0.2;
 }
 ```
 
-Because this is implemented in JavaScript, it is not limited to the computer
-version. AnkiMobile and AnkiDroid both support it as well, and AnkiWeb may
-support it in the future too. This will allow advanced users to make 
-adjustments to the standard scheduling behaviour, that apply on all platforms.
+これはJavaScriptで実装されているため、コンピュータ版に限定されません。AnkiMobileとAnkiDroidの両方でもサポートされており、将来的にはAnkiWebでもサポートされる可能性があります。これにより、上級ユーザーはすべてのプラットフォームで標準のスケジューリング動作を調整できるようになります。
 
-The various scheduling states are described in SchedulingStates [here](https://github.com/ankitects/anki/blob/main/proto/anki/scheduler.proto).
+さまざまなスケジューリング状態については、[SchedulingStates](https://github.com/ankitects/anki/blob/main/proto/anki/scheduler.proto)で説明されています。

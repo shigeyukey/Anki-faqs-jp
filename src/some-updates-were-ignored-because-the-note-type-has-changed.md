@@ -1,22 +1,22 @@
-# "Some updates were ignored because note type has changed"
+# 「いくつかの更新が無視されました。ノートタイプが変更されています」
 
-When importing a shared deck that has previously been imported, Anki will only be able to update your existing cards if:
+以前にインポートした共有デッキを再度インポートする場合、Ankiは以下の条件を満たす場合にのみ既存のカードを更新できます：
 
-- the name, number and order of fields has not changed
-- the name, number and order of card templates has not changed
+- フィールドの名前、数、および順序が変更されていない
+- カードテンプレートの名前、数、および順序が変更されていない
 
-Changes to the front and back template will not prevent updates.
+表面と裏面のテンプレートの変更は、更新を妨げません。
 
-If changes have been made to the fields or card templates and you want to apply updates, you will need to modify the note type in your collection to match the one in the deck you're trying to import. To do this, you can import the shared deck into a new profile, note down the note type's fields and card templates, and then compare them with the note type in your profile.
+フィールドやカードテンプレートに変更が加えられており、更新を適用したい場合は、コレクション内のノートタイプをインポートしようとしているデッキのノートタイプに一致させる必要があります。これを行うには、共有デッキを新しいプロファイルにインポートし、ノートタイプのフィールドとカードテンプレートをメモしてから、自分のプロファイルのノートタイプと比較します。
 
-If you're not concerned with updates, and just want to grab any new cards, one way to make importing work is to delete the old note type via the Tools>Manage Note Types screen. This will delete any cards associated with it, so if you wish to preserve the existing cards, you'll need to manually use the Change Note Type option in the browse screen to move them to a new note type.
+更新に関心がなく、新しいカードを取得したいだけの場合、インポートを機能させる一つの方法は、ツール>ノートタイプの管理画面から古いノートタイプを削除することです。これにより、それに関連付けられたカードが削除されるため、既存のカードを保持したい場合は、ブラウズ画面でノートタイプの変更オプションを手動で使用して、新しいノートタイプに移動する必要があります。
 
-Please note that if the deck sharer has used the 'change note type' option in their collection, they will have permanently broken link between your copy and theirs, and updating via .apkg import will not be possible even if your note type's fields and card templates match. You can check the note types are linked by using the following command in the [debug console](https://docs.ankiweb.net/misc.html#debug-console) while looking at a card in the study screen:
+デッキの共有者がコレクション内で「ノートタイプの変更」オプションを使用した場合、あなたのコピーと共有者の間のリンクが永久に切断され、ノートタイプのフィールドとカードテンプレートが一致していても、.apkgインポートによる更新は不可能になります。ノートタイプがリンクされているかどうかを確認するには、[デバッグコンソール](https://shigeyukey.github.io/anki-manual-jp/misc.html#デバッグコンソール)で学習画面のカードを見ながら次のコマンドを使用します：
 
 ```
 pp(card()['_note'].mid)
 ```
 
-Repeat for the shared deck imported into a temporary profile. If the numbers match, the note types are still linked.
+一時的なプロファイルにインポートした共有デッキについても同様に繰り返します。数字が一致すれば、ノートタイプはまだリンクされています。
 
-If one of the fields in the shared deck has not been altered, it is also possible to apply updates via a text import. After importing the shared deck into a temporary profile, use File>Export to save the notes in txt format. Then in your original profile, you can import the text file, matching against a field that has not changed. Text imports can only operate on one note type at once, so if the shared deck you've downloaded contains multiple note types, you'll need to do the process one note type at a time. More info is at <https://docs.ankiweb.net/importing/packaged-decks.html#updating>.
+共有デッキのフィールドの1つが変更されていない場合、テキストインポートを通じて更新を適用することも可能です。一時的なプロファイルに共有デッキをインポートした後、ファイル>エクスポートを使用してノートをtxt形式で保存します。その後、元のプロファイルでテキストファイルをインポートし、変更されていないフィールドに対して一致させることができます。テキストインポートは一度に1つのノートタイプにしか操作できないため、ダウンロードした共有デッキに複数のノートタイプが含まれている場合は、ノートタイプごとにこのプロセスを行う必要があります。詳細は <https://shigeyukey.github.io/anki-manual-jp/importing/packaged-decks.html#更新> にあります。

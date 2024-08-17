@@ -1,5 +1,5 @@
-# When adding a new card, some fields do not reset!
-Anki supports adjusting sticky fields directly from the editor window from v 2.1.45. This feature
-can be turned on / off by clicking on the pin icon on the right of a field. 
+# 新しいカードを追加する際に、いくつかのフィールドがリセットされない！
 
-If the pin icon is inactive, Anki will clear out the field's content after a note is added. 
+Ankiはバージョン2.1.45からエディタウィンドウから直接スティッキーフィールドを調整することをサポートしています。この機能は、フィールドの右側にあるピンアイコンをクリックすることでオン/オフを切り替えることができます。
+
+ピンアイコンが非アクティブの場合、Ankiはノートが追加された後にフィールドの内容をクリアします。

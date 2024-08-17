@@ -1,42 +1,41 @@
-# Why does AnkiMobile cost more than a typical mobile app?
+# なぜAnkiMobileは一般的なモバイルアプリよりも高価なのですか？
 
-AnkiMobile is not a standalone app - it is intended to be used in conjunction with the online synchronization service and open source computer version that I've made available for free for the last 10 years. Working on these three platforms is a full time job, and AnkiMobile is my way of putting food on the table and supporting future development.
+AnkiMobileは単独のアプリではありません。これは、オンライン同期サービスと、過去10年間無料で提供してきたオープンソースのコンピュータ版と一緒に使用することを意図しています。これらの3つのプラットフォームで作業することはフルタイムの仕事であり、AnkiMobileは私が生計を立て、将来の開発を支援するための手段です。
 
-Because there are so many $1 apps out there, some people are surprised by the price. But when you factor in the computer version, synchronization service, and free updates, AnkiMobile's price is quite competitive. At the time of writing (2013-10-04), SuperMemo's computer+iPhone version will set you back $60, and MentalCase's combo will cost you $29.95. 
+多くの$1アプリが存在するため、価格に驚く人もいます。しかし、コンピュータ版、同期サービス、無料のアップデートを考慮に入れると、AnkiMobileの価格は非常に競争力があります。執筆時点（2013-10-04）では、SuperMemoのコンピュータ+iPhone版は$60、MentalCaseのコンボは$29.95です。
 
-Whether you find AnkiMobile's price to be a good deal will ultimately depend on your needs. If you're an existing Anki user that has invested many hours studying on the computer, AnkiMobile provides an easy way to do your studies anywhere while taking advantage of the advanced scheduling and formatting features that Anki provides. On the other hand, if you're looking for something inexpensive and simple and don't mind being restricted to your Apple device, there are cheaper alternatives out there that you may want to consider.
+AnkiMobileの価格が良い取引だと感じるかどうかは、最終的にはあなたのニーズによります。コンピュータで多くの時間をかけて勉強している既存のAnkiユーザーであれば、AnkiMobileはどこでも勉強できる簡単な方法を提供し、Ankiが提供する高度なスケジューリングとフォーマット機能を活用できます。一方、安価でシンプルなものを探していて、Appleデバイスに限定されることを気にしないのであれば、他の安価な代替品を検討することもできます。
 
-One other thing to note is that once purchased, you can use AnkiMobile on up to 5 of your iOS devices, provided they use the same Apple ID. AnkiMobile also supports family sharing, for families that have that set up.
+もう一つの注意点として、一度購入すれば、同じApple IDを使用している限り、最大5台のiOSデバイスでAnkiMobileを使用できます。AnkiMobileはファミリー共有もサポートしており、ファミリー共有を設定している家族にとって便利です。
 
-Some frequently asked questions:
+いくつかのよくある質問：
 
-**"You'd make more money if you priced it cheaper."**
+**「価格を下げればもっと儲かるのに。」**
 
-I have experimented with different price points in the past, and reducing the price resulted in a net decrease in income. Games like Angry Birds are able to make a profit because they appeal to a wide audience. Spaced repetition flashcard apps are quite a niche market in comparison. For this reason, neither a price change nor a sale is likely in the foreseeable future.
+過去にさまざまな価格設定を試してみましたが、価格を下げると収入が純減する結果となりました。Angry Birdsのようなゲームは幅広い層にアピールするため、利益を上げることができますが、間隔反復フラッシュカードアプリはそれに比べて非常にニッチな市場です。このため、近い将来に価格変更やセールを行う予定はありません。
 
-**"It's too expensive in my country."**
+**「私の国では高すぎます。」**
 
-I appreciate that costs of living are different in different countries, but I'm afraid it's not practical to vary the price depending on where you live. The
-costs of building and supporting Anki are fixed, and they don't vary based on the country a person using Anki lives in.
+生活費が国によって異なることは理解していますが、住んでいる場所によって価格を変えるのは現実的ではありません。Ankiの開発とサポートのコストは固定されており、Ankiを使用する人が住んでいる国によって変わることはありません。
 
-As for why the price might not be exactly the same as $25 USD, please note that Apple sets the price in each country based on the local taxes and costs of doing business there. Please also bear in mind that the price in the US is the price before state sales taxes are applied, so the difference may not be as as much as you think.
+価格が25ドルUSDと完全に一致しない理由については、Appleが各国の税金やビジネスコストに基づいて価格を設定していることに注意してください。また、米国での価格は州の売上税が適用される前の価格であるため、実際の差はそれほど大きくないかもしれません。
 
-**"As a student, I think it's too expensive."**
+**「学生としては高すぎると思います。」**
 
-Please compare it to the price of the average textbook and then consider how many hours of use you get out of each. If you don't use Anki enough to justify the price, then you're welcome to use AnkiWeb instead or look into cheaper alternatives.
+平均的な教科書の価格と比較し、それぞれから得られる使用時間を考慮してください。Ankiの価格に見合うほど使用しない場合は、AnkiWebを代わりに使用するか、より安価な代替品を検討してください。
 
-**"Can I get a free copy for personal use, or for writing a review?"**
+**「個人使用やレビュー執筆のために無料コピーをもらえますか？」**
 
-Sorry, I do not offer promo codes, as preparing them takes time away from development.
+申し訳ありませんが、プロモコードの準備には時間がかかるため、提供していません。
 
-**"You should just rely on donations."**
+**「寄付に頼るべきです。」**
 
-Unfortunately that would not be enough to live on. No matter how much people appreciate a product or service, if they're given the option of not paying, most people will choose not to.
+残念ながら、それでは生活するのに十分ではありません。製品やサービスがどれだけ評価されていても、支払いをしなくても良い選択肢がある場合、ほとんどの人は支払わないことを選びます。
 
-**"You should charge for AnkiWeb instead."**
+**「AnkiWebに課金すべきです。」**
 
-Apple's app store provides a safe and friction-free way of making purchases. Purchasing a subscription from a website requires considerably more effort, and many people are wary of making purchases online.
+AppleのApp Storeは、安全でスムーズな購入方法を提供しています。ウェブサイトからのサブスクリプション購入はかなりの手間がかかり、多くの人がオンラインでの購入に慎重です。
 
-**"Why is the Android version free?"**
+**「なぜAndroid版は無料なのですか？」**
 
-The Android version is developed by a different group of people, who based it off the computer version I wrote. Because they have day jobs and can only work on it in their free time, AnkiMobile is better supported: no questions or bug reports go unanswered, the app is more polished, and most bugs get fixed quickly.
+Android版は別のグループによって開発されており、私が書いたコンピュータ版を基にしています。彼らは日中の仕事があり、自由時間にしか作業できないため、AnkiMobileの方がサポートが充実しています。質問やバグ報告が未回答になることはなく、アプリはより洗練されており、ほとんどのバグが迅速に修正されます。

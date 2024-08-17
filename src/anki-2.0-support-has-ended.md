@@ -1,21 +1,21 @@
-# Anki 2.0 support has ended
+# Anki 2.0 のサポートは終了しました
 
 <h2>Anki</h2>
 
-Update 1 Jun 2020: An upstream SSL certificate has expired, and this has broken syncing for the remaining users on 2.0. 
+2020年6月1日更新: 上流のSSL証明書が期限切れとなり、残りのAnki 2.0ユーザーの同期が壊れました。
 
-On Feb 1 2020, AnkiWeb received a security update that broke syncing for some Anki 2.0 users. The tools Anki 2.0 was built on are no longer receiving bugfixes or security updates, and there is a risk that Anki 2.0 will stop working without warning. For this reason, we highly recommend you start migrating to Anki 2.1.
+2020年2月1日、AnkiWebはセキュリティアップデートを受け取り、一部のAnki 2.0ユーザーの同期が壊れました。Anki 2.0が構築されたツールはもはやバグ修正やセキュリティアップデートを受け取っておらず、Anki 2.0が予告なしに動作しなくなるリスクがあります。このため、Anki 2.1への移行を強くお勧めします。
 
-Syncing with Anki 2.1.x will continue to function. If you have not updated to Anki 2.1.x yet, upgrading is as simple as installing it on your computer, as Anki 2.0.x and 2.1.x use the same file format. You can even switch back and forth if you install 2.0 and 2.1 in separate locations - though please make sure to use the [Downgrade](https://changes.ankiweb.net) button if you're using the latest Anki.
+Anki 2.1.xとの同期は引き続き機能します。まだAnki 2.1.xにアップデートしていない場合、Anki 2.0.xと2.1.xは同じファイル形式を使用しているため、アップグレードはコンピュータにインストールするだけで簡単です。2.0と2.1を別々の場所にインストールすれば、行き来することも可能です。ただし、最新のAnkiを使用している場合は[ダウングレード](https://changes.ankiweb.net)ボタンを使用することを確認してください。
 
-For information on the changes in Anki 2.1, please see <https://changes.ankiweb.net/changes/2.1.html>
+Anki 2.1の変更点については、<https://changes.ankiweb.net/changes/2.1.html>をご覧ください。
 
-You can download Anki 2.1 from <https://apps.ankiweb.net>
+Anki 2.1は<https://apps.ankiweb.net>からダウンロードできます。
 
 <h2>AnkiDroid</h2>
 
-This change will affect devices running Android 4.4 or below. There is a beta build of AnkiDroid available that should fix syncing on devices running 4.1+: <https://groups.google.com/g/anki-android/c/f9ikzWikjjk>
+この変更はAndroid 4.4以下を実行しているデバイスに影響します。4.1+を実行しているデバイスで同期を修正するベータ版のAnkiDroidが利用可能です: <https://groups.google.com/g/anki-android/c/f9ikzWikjjk>
 
 <h2>AnkiMobile</h2>
 
-Any iOS version from 5 onwards should be fine.
+iOS 5以降のバージョンは問題ありません。

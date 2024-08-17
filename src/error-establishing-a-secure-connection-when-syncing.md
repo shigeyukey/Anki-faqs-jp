@@ -1,23 +1,23 @@
-# "Error establishing a secure connection." when syncing
+# 同期時に「安全な接続の確立エラー」が発生する
 
-This error happens when Anki tries to make a connection to AnkiWeb, and receives an invalid response. It can be caused by:
+このエラーは、AnkiがAnkiWebに接続しようとした際に無効な応答を受け取った場合に発生します。以下の原因が考えられます：
 
-- antivirus or firewall software on your machine
-- a filtered network connection, common on work and school networks
-- an unreliable network connection
+- マシン上のアンチウイルスまたはファイアウォールソフトウェア
+- 職場や学校のネットワークで一般的なフィルタリングされたネットワーク接続
+- 信頼性の低いネットワーク接続
 
-**Antivirus/firewall/VPN/proxy**
+**アンチウイルス/ファイアウォール/VPN/プロキシ**
 
-Antivirus, firewall and VPN programs can often cause problems when they filter network traffic.
+アンチウイルス、ファイアウォール、およびVPNプログラムは、ネットワークトラフィックをフィルタリングする際に問題を引き起こすことがあります。
 
-The first thing to try is to add an exception for Anki.
+最初に試すべきことは、Ankiの例外を追加することです。
 
-If that doesn't work, try disabling your antivirus temporarily.
+それがうまくいかない場合は、アンチウイルスを一時的に無効にしてみてください。
 
-Unfortunately some antivirus programs do not completely stop themselves when disabled. We have seen cases where the only way to resolve the problem was to completely uninstall the antivirus program. We do not expect you to stop using your antivirus program just to run Anki, but if the previous suggestions have not helped, it is worth uninstalling and restarting your computer to see if it resolves the problem. If it does, then please contact your antivirus company to report the issue to them.
+残念ながら、一部のアンチウイルスプログラムは無効にしても完全に停止しないことがあります。問題を解決する唯一の方法がアンチウイルスプログラムを完全にアンインストールすることだったケースもあります。Ankiを実行するためだけにアンチウイルスプログラムの使用を中止することは期待していませんが、前述の提案が役立たなかった場合は、アンインストールしてコンピュータを再起動する価値があります。それで問題が解決する場合は、アンチウイルス会社に問題を報告してください。
 
-**Unreliable internet**
+**信頼性の低いインターネット**
 
-If your wifi or internet connection is experiencing troubles, the messages from AnkiWeb may arrive corrupted or not at all, which can cause this error message to occur. It may be worth checking for packet loss:
+Wi-Fiやインターネット接続に問題がある場合、AnkiWebからのメッセージが破損して到着するか、まったく到着しないことがあり、このエラーメッセージが表示されることがあります。パケットロスを確認する価値があるかもしれません：
 
-<https://faqs.ankiweb.net/syncing-failed-connection-timed-out-errors-when-syncing.html>
+<https://shigeyukey.github.io/Anki-faqs-jp/syncing-failed-connection-timed-out-errors-when-syncing.html>

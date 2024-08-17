@@ -1,5 +1,5 @@
-# I'm going on vacation. Can I pause the scheduler?
+# 休暇に行きます。スケジューラーを一時停止できますか？
 
-Being able to come back from a break to find Anki in exactly the same state you left it in may sound attractive, but unfortunately while it's easy to tell the computer to suspend its estimates of how quickly you are forgetting, it's not possible to suspend your memory, so memories will continue to decay if you don't review. If you paused the scheduler, you would be delaying the review of every card in your deck, increasing your chance of forgetting every one of them, even those that would normally have appeared after you returned from your break.
+休暇から戻ってきたときにAnkiがまったく同じ状態であることは魅力的に聞こえるかもしれませんが、残念ながらコンピュータに忘却の速度の見積もりを一時停止するように指示するのは簡単ですが、記憶を一時停止することはできません。レビューを行わないと記憶は衰退し続けます。スケジューラーを一時停止すると、デッキ内のすべてのカードのレビューが遅れ、休暇から戻った後に表示されるはずだったカードも含めて、すべてのカードを忘れる可能性が高くなります。
 
-Anki does have a "Set Due Date" feature in the Browse screen that can change the due date of cards. You can use this to either to move cards to an earlier due date (allowing you to study more before you take a break), or to push cards back to a later date. Conservative changes are recommended - if you alter the due date of cards by too much, there is a good chance you will forget them and need to relearn them again.
+Ankiには、ブラウズ画面でカードの期日を変更できる「期日設定」機能があります。これを使用して、カードを早めの期日に移動させる（休暇前に多くのカードを学習できるようにする）か、カードを後の日付に移動させることができます。保守的な変更が推奨されます。カードの期日を大幅に変更すると、忘れてしまい再学習が必要になる可能性が高くなります。

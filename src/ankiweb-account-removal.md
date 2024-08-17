@@ -1,38 +1,38 @@
-# AnkiWeb account removal
+# AnkiWebアカウントの削除
 
-As AnkiWeb is a free service, we need to periodically delete unused account data in order to keep costs down. As mentioned in our terms of service, your data may be deleted if you have not accessed your account or synced in the last 6 months.
+AnkiWebは無料サービスであるため、コストを抑えるために定期的に未使用のアカウントデータを削除する必要があります。利用規約に記載されているように、最後にアカウントにアクセスしたり同期したりしてから6ヶ月が経過すると、データが削除されることがあります。
 
-Once your deck data has expired, it is not possible for us to recover your data from AnkiWeb, but you may be able to recover it if you have a local copy.
+デッキデータが期限切れになると、AnkiWebからデータを復元することはできませんが、ローカルコピーがあれば復元できる可能性があります。
 
-What gets deleted
+削除されるもの
 -------
 
-If your AnkiWeb account expires, only the AnkiWeb copy of your data is deleted. Any cards you have stored on your computer, phone or tablet will remain on those devices.
+AnkiWebアカウントが期限切れになると、AnkiWeb上のデータのみが削除されます。コンピュータ、電話、タブレットに保存されているカードは、それらのデバイスに残ります。
 
-Returning to AnkiWeb after your data has expired
+データが期限切れになった後にAnkiWebに戻る
 -------
 
-If your account data was deleted due to inactivity, you may still be able to recover that data if you have a copy on your computer or mobile device. You can confirm this by opening Anki or AnkiMobile/AnkiDroid to see if your data is still there. If you had data on your device but accidentally overwrote it in a sync, you may be able to recover it from an [automatic backup](https://faqs.ankiweb.net/restoring-an-automatic-backup-recovering-from-data-loss.html)
+アカウントデータが非アクティブのために削除された場合でも、コンピュータやモバイルデバイスにコピーがあれば、そのデータを復元できる可能性があります。AnkiやAnkiMobile/AnkiDroidを開いてデータがまだ存在するか確認してください。デバイスにデータがあったが同期で誤って上書きしてしまった場合は、[自動バックアップ](https://shigeyukey.github.io/Anki-faqs-jp/restoring-an-automatic-backup-recovering-from-data-loss.html)から復元できるかもしれません。
 
-If you'd like to start syncing that data with AnkiWeb again, please start by logging in to ankiweb.net using your Anki ID. If your account details are correct, you will find you have 0 cards.
+再びそのデータをAnkiWebと同期したい場合は、まずAnki IDを使用してankiweb.netにログインしてください。アカウント情報が正しければ、カードが0枚であることがわかるでしょう。
 
-Once you have a valid AnkiWeb login, you can sync your computer or mobile device, enter your details, and then choose "Upload" to send your data back to AnkiWeb. Please make sure to upload, as choosing download would overwrite your local content with your empty AnkiWeb collection.
+有効なAnkiWebログインができたら、コンピュータやモバイルデバイスを同期し、詳細を入力してから「アップロード」を選択してデータをAnkiWebに送信してください。ダウンロードを選択すると、ローカルのコンテンツが空のAnkiWebコレクションで上書きされてしまうので、必ずアップロードを選択してください。
 
-Avoiding account deletion
+アカウント削除を避ける方法
 -----------------
 
-Each time you visit ankiweb.net, or use the synchronisation feature in Anki, AnkiMobile or AnkiDroid, your account will automatically be marked as active. The mobile clients do not sync automatically, so simply using them to study will not result in your AnkiWeb account being marked active unless you use the sync button.
+ankiweb.netにアクセスするたびに、またはAnki、AnkiMobile、AnkiDroidで同期機能を使用するたびに、アカウントは自動的にアクティブとしてマークされます。モバイルクライアントは自動的に同期しないため、単にそれらを使用して学習するだけでは、同期ボタンを使用しない限りAnkiWebアカウントがアクティブとしてマークされることはありません。
 
-If your account has been inactive for 6 months or more, and you used the service for a week or longer, we will send you an email notifying you that deletion is pending. If you'd like to keep your account active, please log in to ankiweb.net and study a card, or sync one of your devices within 30 days.
+アカウントが6ヶ月以上非アクティブであり、サービスを1週間以上使用していた場合、削除が保留中であることを通知するメールが送信されます。アカウントをアクティブに保ちたい場合は、30日以内にankiweb.netにログインしてカードを学習するか、デバイスのいずれかを同期してください。
 
-Backing up your collection
+コレクションのバックアップ
 --------
 
-If you're not planning to study for a while, or if you receive an inactivity notice and don't wish to renew your account immediately, please ensure that you have a copy of your collection on your local computer or mobile device. Your data should already be on your device if you've used Anki's synchronisation feature. If you've only used AnkiWeb before, please install the computer version or a mobile client and sync with AnkiWeb in order to download your data.
+しばらく学習する予定がない場合や、非アクティブ通知を受け取ってすぐにアカウントを更新したくない場合は、ローカルコンピュータやモバイルデバイスにコレクションのコピーがあることを確認してください。Ankiの同期機能を使用していれば、データはすでにデバイスに保存されているはずです。AnkiWebのみを使用していた場合は、コンピュータ版またはモバイルクライアントをインストールし、AnkiWebと同期してデータをダウンロードしてください。
 
-Shared items
+共有アイテム
 ----------------
 
-When you share a deck, a copy of the deck without scheduling information is made, and that copy along with any add-ons you share are not subject to the usual data expiry.
+デッキを共有すると、スケジュール情報を含まないデッキのコピーが作成され、そのコピーと共有するアドオンは通常のデータ期限切れの対象にはなりません。
 
-Please note however that shared decks will expire if they average less than a few downloads a month, so deck sharing is not a backup mechanism.
+ただし、共有デッキは月に数回未満のダウンロードしかない場合、期限切れになることがありますので、デッキの共有はバックアップの手段ではないことに注意してください。

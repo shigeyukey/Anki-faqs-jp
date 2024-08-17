@@ -1,9 +1,9 @@
-# Can I sync only some of my decks?
+# 一部のデッキだけを同期することはできますか？
 
-Anki stores all your decks in a single collection file, so there is no way to sync only part of a collection. However, there are several possible workarounds that may be useful:
+Ankiはすべてのデッキを単一のコレクションファイルに保存するため、コレクションの一部だけを同期する方法はありません。しかし、いくつかの有用な回避策があります：
 
-**Use two profiles.** You can store the decks you do not want to sync in a separate profile (you can create and manage profiles by choosing File → Switch Profile). This is useful if you have a lot of media that you have no need for on your mobile device, or if you cannot place some data on AnkiWeb because of security or confidentiality issues. However, it has the disadvantage that you will have to switch profiles to review all of your decks, and you will not be able to get combined statistics easily.
+**2つのプロファイルを使用する。** 同期したくないデッキを別のプロファイルに保存することができます（プロファイルの作成と管理は、ファイル → プロファイルの切り替えから行えます）。これは、多くのメディアがあり、モバイルデバイスには不要な場合や、セキュリティや機密性の問題でAnkiWebにデータを置けない場合に便利です。しかし、すべてのデッキを復習するためにプロファイルを切り替える必要があり、統合された統計情報を簡単に取得できないという欠点があります。
 
-If you decide to use two profiles, you can easily move data between them by exporting .apkg files with scheduling information and media.
+2つのプロファイルを使用することに決めた場合、スケジューリング情報とメディアを含む.apkgファイルをエクスポートすることで、簡単にデータを移動できます。
 
-**Use subdecks.** If your primary objection to syncing all of your decks is that you simply don't need some of them on the mobile device and don't want to clutter up the screen, you may choose to keep them in your collection and sync them, but keep them out of the way in a separate deck. One way to do this is to create a deck called `~ Desktop Only` or something similar and drag all of your desktop-only decks underneath it (the tilde keeps it at the bottom of the deck list; you can use an underscore if you want it at the top or nothing if you want it to sort with the other decks). You can then keep this deck collapsed on your mobile device. While the information will still sync, you will not have to see it.
+**サブデッキを使用する。** すべてのデッキを同期することに対する主な異議が、単にモバイルデバイスにいくつかのデッキが不要であり、画面を散らかしたくないという場合、コレクションにそれらを保持し、同期することができますが、別のデッキにまとめておくことができます。これを行う一つの方法は、「~ Desktop Only」などの名前のデッキを作成し、その下にデスクトップ専用のデッキをすべてドラッグすることです（チルダはデッキリストの一番下に保持します。トップに置きたい場合はアンダースコアを使用するか、他のデッキと一緒にソートしたい場合は何も使用しないでください）。このデッキをモバイルデバイスで折りたたんでおくことができます。情報は同期されますが、表示する必要はありません。
