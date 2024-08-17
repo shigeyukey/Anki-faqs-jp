@@ -6,7 +6,6 @@ multilingual = false
 src = "src"
 title = "Anki よくある質問"
 
-
 [build]
 create-missing = true
 
