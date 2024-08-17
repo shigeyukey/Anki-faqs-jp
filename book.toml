@@ -1,7 +1,7 @@
 [book]
 authors = ["Ankitects Pty Ltd and contributors"]
 description = "Ankiに関するよくある質問。Ankiは学習を容易にするプログラムです。"
-language = "en"
+language = "ja"
 multilingual = false
 src = "src"
 title = "Anki よくある質問"
@@ -11,7 +11,7 @@ create-missing = true
 
 [output.html]
 no-section-label = true
-git-repository-url = "https://github.com/shigeyukey/Anki-faqs-jp/"
+git-repository-url = "https://github.com/shigeyukey/Anki-faqs-jp"
 additional-css = ["css/misc.css"]
 
 [output.linkcheck]
