@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Anki 2.1スケジューラ - Anki よくある質問</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Ankiに関するよくある質問。Ankiは学習を容易にするプログラムです。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="css/misc.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="getting-help.html">ヘルプの取得</a></li><li class="chapter-item expanded affix "><a href="when-problems-occur.html">問題が発生した場合</a></li><li class="chapter-item expanded affix "><a href="restoring-an-automatic-backup-recovering-from-data-loss.html">自動バックアップの復元（データ損失からの回復）</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Cards and Notes</li><li class="chapter-item expanded "><a href="linking-cards-together.html">Can I link cards together?</a></li><li class="chapter-item expanded "><a href="can-i-reveal-parts-of-a-card-one-at-a-time.html">Can I reveal parts of a card one at a time?</a></li><li class="chapter-item expanded "><a href="card-template-has-a-problem.html">Card template has a problem</a></li><li class="chapter-item expanded "><a href="cards-are-reversed-appearing-twice.html">Cards are reversed / appearing twice</a></li><li class="chapter-item expanded "><a href="characters-are-cut-off.html">Characters are cut off</a></li><li class="chapter-item expanded "><a href="customizing-mathjax.html">Customizing MathJax</a></li><li class="chapter-item expanded "><a href="errors-when-recording.html">Errors when recording</a></li><li class="chapter-item expanded "><a href="extra-characters-appearing-on-cards.html">Extra characters appearing on cards</a></li><li class="chapter-item expanded "><a href="multiple-choice-questions.html">Multiple choice questions</a></li><li class="chapter-item expanded "><a href="no-cloze-found-on-card.html">No cloze found on card</a></li><li class="chapter-item expanded "><a href="note-types-with-strange-names.html">Note types with strange names</a></li><li class="chapter-item expanded "><a href="printing-cards-in-your-collection.html">Printing cards in your collection</a></li><li class="chapter-item expanded "><a href="removing-duplicate-note-types.html">Removing duplicate note types</a></li><li class="chapter-item expanded "><a href="some-updates-were-ignored-because-the-note-type-has-changed.html">Some updates were ignored because note type has changed</a></li><li class="chapter-item expanded "><a href="sounds-or-images-have-gone-missing.html">Sound/image media files have gone missing!</a></li><li class="chapter-item expanded "><a href="splitting-a-field-into-multiple-fields.html">Splitting a field into multiple fields</a></li><li class="chapter-item expanded "><a href="text-to-speech-support.html">Text to speech support</a></li><li class="chapter-item expanded "><a href="sticky-fields.html">When adding a new card, some fields do not reset!</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">デッキ</li><li class="chapter-item expanded "><a href="a-deck-i-want-has-disappeared-from-ankiweb.html">欲しいデッキがAnkiWebから消えました</a></li><li class="chapter-item expanded "><a href="a-shared-deck-is-not-showing-images-or-playing-audio.html">共有デッキが画像を表示しない/音声を再生しない</a></li><li class="chapter-item expanded "><a href="cards-are-being-placed-in-the-default-deck.html">カードが「Default」デッキに配置されています</a></li><li class="chapter-item expanded "><a href="hiding-decks.html">デッキを非表示にする</a></li><li class="chapter-item expanded "><a href="how-can-i-work-with-someone-else-to-create-a-deck.html">他の人と協力してデッキを作成するにはどうすればよいですか？</a></li><li class="chapter-item expanded "><a href="how-do-i-move-cards-between-decks.html">カードをデッキ間で移動するにはどうすればよいですか？</a></li><li class="chapter-item expanded "><a href="merging-or-combining-two-decks.html">2つのデッキをマージ/結合する</a></li><li class="chapter-item expanded "><a href="shared-decks-with-broken-javascript.html">JavaScriptが壊れている共有デッキ</a></li><li class="chapter-item expanded "><a href="timestamps-in-the-future.html">将来のタイムスタンプのためにインポート/エクスポートに失敗する</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">スケジューリング</li><li class="chapter-item expanded "><a href="anki-is-not-showing-me-all-my-cards.html">Ankiがすべてのカードを表示しません！</a></li><li class="chapter-item expanded "><a href="study-in-a-particular-order.html">カードを特定の順序で学習できますか？</a></li><li class="chapter-item expanded "><a href="due-times-after-a-break.html">休憩後の期日</a></li><li class="chapter-item expanded "><a href="extra-copies-of-a-card-are-coming-up.html">カードの余分なコピーが表示される</a></li><li class="chapter-item expanded "><a href="hard-good-interval-longer-than-good-easy.html">ハード/グッドの間隔がグッド/イージーより長い</a></li><li class="chapter-item expanded "><a href="i-am-going-on-vacation-can-i-pause-the-scheduler.html">休暇に行きます。スケジューラを一時停止できますか？</a></li><li class="chapter-item expanded "><a href="learning-steps-skipped-or-repeated.html">学習ステップがスキップまたは繰り返される</a></li><li class="chapter-item expanded "><a href="resetting-progress-in-a-deck.html">デッキの進捗をリセットする</a></li><li class="chapter-item expanded "><a href="settings-for-using-anki-to-prepare-for-a-large-exam.html">大規模な試験の準備にAnkiを使用するための設定</a></li><li class="chapter-item expanded "><a href="the-anki-2.1-scheduler.html" class="active">Anki 2.1スケジューラ</a></li><li class="chapter-item expanded "><a href="the-2021-scheduler.html">Anki v3スケジューラ</a></li><li class="chapter-item expanded "><a href="timezone-handling-changes.html">タイムゾーンの取り扱いの変更</a></li><li class="chapter-item expanded "><a href="what-spaced-repetition-algorithm.html">Ankiはどのような間隔反復アルゴリズムを使用していますか？</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">同期とAnkiWeb</li><li class="chapter-item expanded "><a href="ankiweb-account-removal.html">AnkiWebアカウントの削除</a></li><li class="chapter-item expanded "><a href="are-there-limits-on-file-sizes-on-ankiweb.html">AnkiWebのファイルサイズに制限はありますか？</a></li><li class="chapter-item expanded "><a href="can-i-sync-only-some-of-my-decks.html">一部のデッキだけを同期できますか？</a></li><li class="chapter-item expanded "><a href="email-verification.html">メールの確認</a></li><li class="chapter-item expanded "><a href="emails-not-being-received.html">メールが受信されない</a></li><li class="chapter-item expanded "><a href="error-establishing-a-secure-connection-when-syncing.html">同期時に安全な接続を確立する際のエラー</a></li><li class="chapter-item expanded "><a href="media-files-may-take-time-to-sync.html">メディアファイルの同期には時間がかかる場合があります</a></li><li class="chapter-item expanded "><a href="outlook-silently-discards-email.html">Outlook.comがメールを黙って破棄する</a></li><li class="chapter-item expanded "><a href="synchronizing-multiple-profiles.html">複数のプロファイルを同期する</a></li><li class="chapter-item expanded "><a href="syncing-failed-connection-timed-out-errors-when-syncing.html">同期に失敗しました：同期時の接続タイムアウトエラー</a></li><li class="chapter-item expanded "><a href="sounds-or-images-are-not-appearing-on-ankiweb-or-the-mobile-clients.html">AnkiWebやモバイルクライアントで音声や画像が表示されない</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Anki デスクトップ</li><li class="chapter-item expanded "><a href="shortcut-not-working.html">ショートカットキーが機能しない</a></li><li class="chapter-item expanded "><a href="anki-must-be-able-to-connect-to-a-local-port.html">Ankiはローカルポートに接続できる必要があります</a></li><li class="chapter-item expanded "><a href="anki-says-my-clock-is-wrong.html">Ankiが時計が間違っていると言う</a></li><li class="chapter-item expanded "><a href="changing-the-font.html">フォントの変更</a></li><li class="chapter-item expanded "><a href="changing-the-interface-language.html">インターフェース言語の変更</a></li><li class="chapter-item expanded "><a href="my-antivirus-program-says-anki-is-infected.html">アンチウイルスプログラムがAnkiが感染していると言う！</a></li><li class="chapter-item expanded "><a href="running-from-python.html">Pythonからの実行</a></li><li class="chapter-item expanded "><a href="screenshots-large-and-blurry-on-retina-displays.html">Retinaディスプレイでスクリーンショットが大きくてぼやけている</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">AnkiMobile</li><li class="chapter-item expanded "><a href="requesting-a-refund-for-ankimobile.html">AnkiMobileの返金をリクエストする</a></li><li class="chapter-item expanded "><a href="retrieving-ankimobile-crash-logs.html">AnkiMobileのクラッシュログを取得する</a></li><li class="chapter-item expanded "><a href="why-does-ankimobile-cost-more-than-a-typical-mobile-app.html">なぜAnkiMobileは一般的なモバイルアプリよりも高価なのですか？</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">その他のアプリ</li><li class="chapter-item expanded "><a href="anki-knockoffs.html">Ankiの模倣アプリ</a></li><li class="chapter-item expanded "><a href="ankiapp-is-not-part-of-the-anki-ecosystem.html">AnkiAppはAnkiエコシステムの一部ではありません</a></li><li class="chapter-item expanded "><a href="ankidroid-has-a-separate-support-site.html">AnkiDroidには別のサポートサイトがあります</a></li><li class="chapter-item expanded "><a href="ankiuniversal-is-not-supported-here.html">AnkiUniversalはここではサポートされていません</a></li><li class="chapter-item expanded "><a href="we-do-not-make-robots.html">私たちはロボットを作っていません</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">その他</li><li class="chapter-item expanded "><a href="anki-2.0-support-has-ended.html">Anki 2.0のサポートは終了しました</a></li><li class="chapter-item expanded "><a href="anki-2.0-add-ons.html">Anki 2.0のアドオン</a></li><li class="chapter-item expanded "><a href="can-i-use-anki-in-a-company-or-school.html">会社や学校でAnkiを使用できますか？</a></li><li class="chapter-item expanded "><a href="how-can-i-donate.html">寄付するにはどうすればよいですか？</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anki よくある質問</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/shigeyukey/Anki-faqs-jp" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="anki-21-スケジューラ"><a class="header" href="#anki-21-スケジューラ">Anki 2.1 スケジューラ</a></h1>
+<p>Anki 2.1には、以前のAnkiバージョンで発生していた多くの問題を修正する新しいスケジューラが搭載されています。</p>
+<h2 id="互換性"><a class="header" href="#互換性">互換性</a></h2>
+<p>2.1スケジューラは2018年8月に導入されました。AnkiMobileとAnkiWebも同時期にサポートが追加され、AnkiDroidは2019年10月以降のリリースでサポートしています。</p>
+<p>古いAnki 2.0ではサポートされていません。</p>
+<p>Anki 2.1.50+/AnkiMobile 2.0.84+では、2.1スケジューラへのアップデートが必要です。</p>
+<h2 id="アップデート"><a class="header" href="#アップデート">アップデート</a></h2>
+<p>AnkiWebと同期している場合、アップデートにはAnkiWebへの一方向のアップロードが必要です。アップデートする前に、すべてのデバイスが同期していることを確認してください。そうしないと、他のデバイスで行った変更を誤って上書きしてしまう可能性があります。</p>
+<p>アップデートする前に、バックアップをエクスポートすることをお勧めします。コンピュータ版を使用している場合は、ファイル &gt; エクスポートメニュー項目を使用して、すべてのデッキとスケジューリングを含む.colpkgファイルを作成できます。AnkiMobileを使用している場合は、追加/エクスポートオプションを使用してcolpkgファイルをエクスポートできます。問題が発生した場合には、バックアップから復元することができます。</p>
+<p>アップデートが完了したら、同期して「アップロード」を選択し、アップグレードされたコレクションをAnkiWebに送信してください。その後、使用している他のデバイスを同期し、それぞれで「ダウンロード」を選択して、すべてを再同期してください。</p>
+<h3 id="anki-2141ankimobile-2075"><a class="header" href="#anki-2141ankimobile-2075">Anki 2.1.41+/AnkiMobile 2.0.75+</a></h3>
+<p>アップデートするには、デッキリストに表示されるアップデートメッセージをクリックしてください。</p>
+<p>以前のAnkiバージョンとは異なり、学習中のカードはリセットされず、フィルターデッキ内のカードもフィルタリングされたままです。新しいスケジューラはフィルターデッキを異なる方法で処理するため、設定したカスタムステップは適用されなくなりますが、再スケジューリングが有効なフィルターデッキは学習カードをリセットしません。</p>
+<p>アップデート時にAnkiDroid 2.14を使用しているかどうかを尋ねられることがあります。この場合、「いいえ」を選択しても問題ありません。AnkiDroid 2.15がリリースされているためです。プロンプトで間違えた場合は、Ankiの設定画面でタイムゾーンの処理を調整できます。</p>
+<p>一度アップデートすると、古いスケジューラに戻すオプションはありません。コンピュータで古いバージョンのAnkiに戻し、設定でスケジューラを変更することは可能ですが、その場合、学習カードとフィルターデッキをリセットする必要があります。</p>
+<p>AnkiMobile 2.0.84+にアップデートした場合、Appleはアプリのダウングレードを許可していないため、古いスケジューラに戻すことはできません。</p>
+<h3 id="古いankiバージョン"><a class="header" href="#古いankiバージョン">古いAnkiバージョン</a></h3>
+<p>古いAnkiバージョンでは、アップデート前に学習中のすべてのカードがリセットされ、フィルターデッキ内のすべてのカードが元のデッキに戻されます。これは、長い学習ステップを持つ人々にとって問題となります。そのような状況にある場合は、2.1.41以降にアップデートすることをお勧めします。</p>
+<p>古いバージョンには、設定画面でスケジューラのバージョンを切り替えるオプションがあります。</p>
+<h2 id="変更点"><a class="header" href="#変更点">変更点</a></h2>
+<p>レビュー:</p>
+<ul>
+<li>デッキに子デッキがある場合、1つのデッキを表示する代わりに、すべての子デッキから一度にレビューが取られます。</li>
+<li>日次レビューの制限は、クリックしたデッキから取られます。「grandparent::parent::child」というデッキツリーがあり、「parent」をクリックした場合、「grandparent」と「child」に設定した制限は無視されます。</li>
+</ul>
+<p>(再)学習:</p>
+<ul>
+<li>学習カードには3つではなく4つのボタンがあります。ハードは最初のステップの後に現在のステップを繰り返し、最初のステップではAgainとGoodの平均です。</li>
+<li>学習カウントは、完了するために必要なステップ数ではなく、カードの数になりました。</li>
+<li>カードを一時停止/埋めることは、カードの学習ステップをリセットしません。</li>
+<li>失効したレビューは、最初のステップではなく、最後の再学習ステップで次の期日が更新されます。</li>
+<li>設定画面に、レビューの前に日間学習カードを表示する新しいオプションがあります。</li>
+<li>カードが再学習中の場合、イージーボタンは間隔を1日延ばします。</li>
+</ul>
+<p>フィルターデッキ:</p>
+<ul>
+<li>フィルターデッキは、構築または空にされたときに(再)学習カードをリセットせず、レビューと学習カードは新しいキューではなく正しいキューに表示されます。</li>
+<li>フィルターデッキは2つ目の検索条件をサポートするため、例えば100枚のレビューカードと20枚の新しいカードを含めることができます。</li>
+<li>まだ期日が来ていないカードのスケジューリングが改善され、3つではなく4つのボタンが表示されます。</li>
+<li>フィルターデッキはカスタムステップをサポートしなくなり、スケジューリングの変更を無効にする古いオプションの代わりにシンプルな「プレビューモード」があります。プレビュー時に新しいカードの順序は忘れられません。</li>
+<li>カードはフィルターデッキに残ったまま埋めたり一時停止したりできます。</li>
+</ul>
+<p>その他の変更点:</p>
+<ul>
+<li>「次の日の開始」は現在のタイムゾーンに相対的になりました。</li>
+<li>Ankiは手動で埋められたカードと自動で埋められたカードを区別するようになり、一方を解除しても他方は解除されません。</li>
+</ul>
+<h2 id="2021年の更新"><a class="header" href="#2021年の更新">2021年の更新</a></h2>
+<p>V2スケジューラの更新は現在<a href="./the-2021-scheduler.html">ベータテスト中</a>です。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="settings-for-using-anki-to-prepare-for-a-large-exam.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="the-2021-scheduler.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="settings-for-using-anki-to-prepare-for-a-large-exam.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="the-2021-scheduler.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
