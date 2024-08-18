@@ -1,24 +1,18 @@
 [book]
 authors = ["Ankitects Pty Ltd and contributors"]
-description = "Ankiに関するよくある質問。Ankiは学習を容易にするプログラムです。"
 language = "ja"
 multilingual = false
 src = "src"
 title = "Anki よくある質問"
 
-[build]
-create-missing = true
-
 [output.html]
-no-section-label = true
-git-repository-url = "https://github.com/shigeyukey/Anki-faqs-jp"
-additional-css = ["css/misc.css"]
+git-repository-url = "https://forms.gle/jbnPepH378mVb2Sz5"
+git-repository-icon = "fa-envelope"
+additional-css = ["css/misc.css", "css/kbd.css"]
 
-[output.linkcheck]
-optional = true
-warning-policy = "warn"
-follow-web-links = true
-# sites that block programmatic access
-exclude = [ 'quora\.com', 'reddit.com',
- 'superuser.com', 'github.com/open-spaced-repetition',
- 'shigeyukey.github.io/Anki-faqs-jp','shigeyukey.github.io/anki-manual-jp' ]
+[output.html.print]
+enable = false
+
+[output.html.fold]
+enable = true
+level = 0
