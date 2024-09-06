@@ -17,7 +17,7 @@
 - [録音時にエラーが発生する](./errors-when-recording.md)
 - [カードに余分な文字が表示される](./extra-characters-appearing-on-cards.md)
 - [複数選択問題](./multiple-choice-questions.md)
-- [カードにクローズが見つかりません](./no-cloze-found-on-card.md)
+- [カードに穴埋め問題が見つかりません](./no-cloze-found-on-card.md)
 - [奇妙な名前のノートタイプ](./note-types-with-strange-names.md)
 - [コレクション内のカードを印刷する](./printing-cards-in-your-collection.md)
 - [重複したノートタイプを削除する](./removing-duplicate-note-types.md)
